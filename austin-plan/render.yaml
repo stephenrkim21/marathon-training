@@ -1,0 +1,21 @@
+# Review costs before applying: one paid Starter service + 1 GB disk.
+services:
+  - type: web
+    name: stephen-marathon
+    runtime: docker
+    plan: starter
+    numInstances: 1
+    healthCheckPath: /health
+    disk:
+      name: marathon-private-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: APP_ORIGIN
+        sync: false
+      - key: DATA_DIR
+        value: /data
+      - key: SYNC_ENABLED
+        value: "1"
+      - key: BACKGROUND_ENABLED
+        value: "1"
