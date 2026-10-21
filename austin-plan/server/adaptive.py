@@ -75,7 +75,7 @@ class Planner:
     @staticmethod
     def _ease(day, target, reason):
         # Only reduce mileage. Replace optional quality and strength text as well.
-        target=max(0,min(day['miles'],int(target*10)/10))
+        target=max(0,min(day['miles'],int(target*10+1e-9)/10))
         day.update(miles=target, type='easy' if target else 'rest', paceKey='easy' if target else None,
                    title='Easy recovery run' if target else 'Rest and recover',
                    pace='Full-sentence conversation; walk breaks allowed' if target else None,
@@ -150,11 +150,24 @@ class Planner:
                 # Don't let the next long run jump far beyond demonstrated recent distance.
                 history=[r['distance']/MILE for r in runs if 0<=(today-date.fromisoformat(r['date'])).days<=28]
                 if history:
-                    cap=max(history)+1
+                    # Larger steps require actual consistency and a recent recovery check-in.
+                    step=1
+                    rule=base.get('longRunProgression') or {}
+                    prior=[w for w in plan['weeks'] if w['end']<today.isoformat() and not any(d['type']=='race' for d in w['days'])][-2:]
+                    checkrow=db.execute('SELECT body FROM coach_checkins WHERE date>=? AND date<=? ORDER BY date DESC LIMIT 1',
+                                        ((today-timedelta(days=2)).isoformat(),today.isoformat())).fetchone()
+                    recovery=json.loads(checkrow[0]) if checkrow else None
+                    ready=bool(recovery and not recovery['pain'] and max(recovery['soreness'],recovery['fatigue'])<=2 and recovery['effort']<=7)
+                    for week in prior:
+                        done=sum(r['distance']/MILE for r in runs if week['start']<=r['date']<=week['end'])
+                        days={r['date'] for r in runs if week['start']<=r['date']<=week['end']}
+                        ready=ready and week['total']>0 and done>=week['total']*.85 and len(days)>=4
+                    if rule.get('readyStepMiles')==2 and len(prior)==2 and ready:step=2
+                    cap=max(history)+step
                     for d in future(7):
                         if ('long' in d['title'].lower() or d['type']=='long') and d['miles']>cap+.1 and event('long-cap:'+d['date']):
-                            self._ease(d,cap,'Long run capped at one mile beyond your longest completed run in the past 28 days.')
-                            reasons.append('Upcoming long run capped to recent completed distance + 1 mile.')
+                            self._ease(d,cap,f'Long run capped at {step} mile(s) beyond your longest completed run in the past 28 days.')
+                            reasons.append(f'Upcoming long run capped to recent completed distance + {step} mile(s). Two-mile steps require consistent training and a recent low-fatigue check-in.')
             self._record(db,before,plan,' '.join(reasons),'automatic')
 
     def _proposal(self, db, base, plan, today, runs):
