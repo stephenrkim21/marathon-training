@@ -106,5 +106,4 @@ if __name__=='__main__':
     except Exception as error:
         # Never print HTTP bodies, decrypted state, tokens, secrets, or upstream exception text.
         print('Hosted sync did not finish:',type(error).__name__+'. Existing hosted state was preserved.')
-             print("HTTP status:", getattr(error, "code", "unknown"))
         raise SystemExit(1)
