@@ -1,0 +1,30 @@
+name: Garmin sync
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: private-garmin-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install locked dependencies
+        run: python -m pip install --disable-pip-version-check --quiet -r austin-plan/requirements.lock.txt -r austin-plan/requirements.hosted.txt
+      - name: Sync Garmin and review queued changes
+        working-directory: austin-plan
+        env:
+          APP_ORIGIN: ${{ secrets.APP_ORIGIN }}
+          WORKER_SECRET: ${{ secrets.WORKER_SECRET }}
+          STATE_KEY: ${{ secrets.STATE_KEY }}
+        run: python -m server.hosted_worker
