@@ -2,6 +2,8 @@
 let editingCheckin=false;
 let hosted=false;
 let lastAction=null;
+let trainingView="weeks";
+let currentWeekNumber=null;
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const miles=m=>m/1609.344;
@@ -62,6 +64,40 @@ function dailyWorkouts(day,weekNumber,strength={}){
 function renderWorkouts(day,weekNumber,strength){
  return `<div class="session-list">${dailyWorkouts(day,weekNumber,strength).map((session,index)=>`<section class="session-card session-${esc(session.kind)}"><div class="session-heading"><span class="session-number">${index+1}</span><h5>${esc(session.title)}</h5>${session.optional?'<span class="session-optional">Optional</span>':''}</div>${session.distance?`<p class="session-meta">${esc(session.distance)} · ${esc(session.pace)}</p>`:''}<ul>${session.steps.map(step=>`<li>${esc(step)}</li>`).join('')}</ul>${session.notes.map(note=>`<p class="session-note">${esc(note)}</p>`).join('')}</section>`).join('')}</div>`;
 }
+function setTrainingView(view){
+ trainingView=view;
+ $('weeks').hidden=view!=='weeks';$('calendar').hidden=view!=='calendar';
+ $('viewWeeks').setAttribute('aria-pressed',String(view==='weeks'));
+ $('viewCalendar').setAttribute('aria-pressed',String(view==='calendar'));
+}
+function showActionNotice(message){$('actionNotice').textContent=message;$('actionNotice').hidden=false;}
+function renderTrainingOverview(plan,runs){
+ const now=today(),current=plan.weeks.find(w=>w.start<=now&&now<=w.end);
+ const all=plan.weeks.flatMap(w=>w.days),first=plan.weeks[0]?.start;
+ const plannedToDate=all.filter(d=>d.date<=now).reduce((n,d)=>n+d.miles,0);
+ const actualToDate=miles(totals(runs.filter(r=>r.date>=first&&r.date<=now)).distance);
+ const weekly=current?miles(totals(runs.filter(r=>r.date>=current.start&&r.date<=current.end)).distance):0;
+ const elapsed=plan.weeks.filter(w=>w.end<now).length;
+ for(const [key,value,target,label] of [['Week',weekly,current?.total||0,`${weekly.toFixed(1)} / ${current?.total||0}`],['ToDate',actualToDate,plannedToDate,`${actualToDate.toFixed(0)} / ${plannedToDate.toFixed(0)}`],['Progress',elapsed,plan.weeks.length,`${elapsed} / ${plan.weeks.length}`]]){
+  const percent=target>0?Math.max(0,Math.min(100,value/target*100)):0;
+  $('gauge'+key).style.setProperty('--progress',percent+'%');$('gauge'+key+'Value').textContent=label;
+ }
+ const days=Math.ceil((Date.parse(plan.race.date+'T12:00:00Z')-Date.parse(now+'T12:00:00Z'))/86400000);
+ $('countdown').textContent=`${plan.race.name} · ${plan.race.goal} goal · ${Math.max(0,days)} days to go`;
+ const months=new Map();
+ for(const day of all){const month=day.date.slice(0,7);if(!months.has(month))months.set(month,[]);months.get(month).push(day);}
+ $('calendar').innerHTML='<p class="calendar-help">Select a day to open its workouts. ✓ indicates a Garmin run; orange indicates planned quality or race day.</p>'+[...months].map(([month,days])=>{
+  const offset=(new Date(month+'-01T12:00:00').getDay()+6)%7;
+  const count=new Date(Number(month.slice(0,4)),Number(month.slice(5,7)),0).getDate();
+  const map=new Map(days.map(d=>[Number(d.date.slice(8)),d]));
+  return `<article class="calendar-month"><h3>${new Date(month+'-01T12:00:00').toLocaleDateString('en-US',{month:'long',year:'numeric'})}</h3><div class="calendar-grid">${['M','T','W','T','F','S','S'].map(d=>`<span class="calendar-dow">${d}</span>`).join('')}${'<span></span>'.repeat(offset)}${Array.from({length:count},(_,i)=>{
+   const d=map.get(i+1);if(!d)return `<span class="calendar-outside">${i+1}</span>`;
+   const actual=runs.filter(r=>r.date===d.date),done=miles(totals(actual).distance);
+   return `<button type="button" data-day="${d.date}" class="calendar-day ${d.date===now?'is-today':''} ${d.type==='quality'||d.type==='race'?'is-quality':''} ${actual.length?'is-done':''}" aria-label="${esc(dateLabel(d.date)+': '+d.title+', '+d.miles+' planned miles'+(actual.length?', '+done.toFixed(1)+' completed miles':''))}"><small>${i+1}${actual.length?' ✓':''}</small><b>${d.miles||'—'}</b><span>${actual.length?done.toFixed(1)+' done':d.miles?'mi':'rest'}</span></button>`;
+  }).join('')}</div></article>`;
+ }).join('');
+ setTrainingView(trainingView);
+}
 async function load(){
  $('refresh').disabled=true;
  try{
@@ -76,7 +112,9 @@ async function load(){
   $('checkinStatus').textContent=hosting.pending?`${hosting.pending} change(s) saved; awaiting the next hourly review.`:failed?failed.error:'Hosted reviews run hourly. Refresh loads the latest saved review.';
   $('coachNote').textContent+=' Hosted changes apply at the next hourly review. If you have pain, pause running now; do not wait for an app update.';
  }
+ renderTrainingOverview(plan,runs);
  const current=plan.weeks.find(w=>w.start<=today()&&today()<=w.end);
+ currentWeekNumber=current?.week??null;
  const weekRuns=current?runs.filter(r=>r.date>=current.start&&r.date<=current.end):[];
  const sum=totals(weekRuns);
  $('distance').textContent=miles(sum.distance).toFixed(1);
@@ -90,11 +128,11 @@ async function load(){
  const first=!$('weeks').children.length;
  $('weeks').innerHTML=plan.weeks.map(w=>{
  const wr=runs.filter(r=>r.date>=w.start&&r.date<=w.end),t=totals(wr),actual=miles(t.distance);
- return `<details id="week-${w.week}" ${(open.has(`week-${w.week}`)||(first&&w===current))?'open':''}><summary><div><span class="week-label">Week ${w.week} · ${esc(w.phase)}</span><span class="week-date">${dateLabel(w.start)} – ${dateLabel(w.end)}</span></div><div class="week-total">${actual.toFixed(1)} / ${w.total} mi<small>${duration(t.moving)} completed · ${wr.length} runs</small></div></summary><div class="progress"><i style="width:${Math.min(100,100*actual/w.total)||0}%"></i></div>${w.days.map(d=>{
+ return `<details class="training-week ${w===current?'current-week':''}" id="week-${w.week}" ${(open.has(`week-${w.week}`)||(first&&w===current))?'open':''}><summary><div><span class="week-label">Week ${w.week} · ${esc(w.phase)}</span><span class="week-date">${dateLabel(w.start)} – ${dateLabel(w.end)}</span></div><div class="week-total">${actual.toFixed(1)} / ${w.total} mi<small>${duration(t.moving)} completed · ${wr.length} runs</small></div></summary><div class="progress"><i style="width:${Math.min(100,100*actual/w.total)||0}%"></i></div>${w.days.map(d=>{
  const dr=wr.filter(r=>r.date===d.date);
- return `<div class="day"><div class="date">${new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'short'})}<strong>${d.date.slice(8)}</strong></div><div class="workout"><h4>Today’s workouts</h4>${renderWorkouts(d,w.week,plan.strength)}</div><div class="planned">${d.miles?d.miles+' mi':'Rest'}<small>${d.miles?esc(d.pace):'Recovery matters'}</small></div>${dr.length?dr.map(activity).join(''):`<div class="no-run">${d.date<today()&&d.miles?'No completed run recorded':d.miles?'Planned workout':'Rest day'} </div>`}</div>`}).join('')}</details>`;
+ return `<div class="day ${d.date===today()?'today':''}" id="day-${d.date}"><div class="date">${new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'short'})}<strong>${d.date.slice(8)}</strong></div><div class="workout"><h4>Scheduled workouts</h4>${renderWorkouts(d,w.week,plan.strength)}</div><div class="planned">${d.miles?d.miles+' mi':'Rest'}<small>${d.miles?esc(d.pace):'Recovery matters'}</small></div>${dr.length?dr.map(activity).join(''):`<div class="no-run">${d.date<today()&&d.miles?'No completed run recorded':d.miles?'Planned workout':'Rest day'} </div>`}</div>`}).join('')}</details>`;
  }).join('');
- $('current').onclick=()=>{if(current){const el=$(`week-${current.week}`);el.open=true;el.scrollIntoView({behavior:'smooth',block:'start'})}};
+ $('current').onclick=()=>{setTrainingView('weeks');if(current){const el=$(`week-${current.week}`);el.open=true;el.scrollIntoView({behavior:'smooth',block:'start'})}};
  }catch(e){$('syncState').textContent=e.message;}finally{$('refresh').disabled=false;}
 }
 $('refresh').onclick=load;
@@ -144,5 +182,14 @@ document.querySelector('.coach-panel').addEventListener('click',async event=>{
   if(target.dataset.undo)await action('/api/adaptive/undo',{revision:Number(target.dataset.undo)});
   else await action('/api/adaptive/approve',{id:target.dataset.proposal});
   await load();
- }catch(e){$('checkinStatus').textContent=e.message;target.disabled=false}
+  showActionNotice(lastAction?.queued?'Saved — waiting for the next hosted sync. Run Garmin sync in GitHub Actions for an earlier review.':'Plan change applied.');
+ }catch(e){showActionNotice(e.message);$('checkinStatus').textContent=e.message;target.disabled=false}
+});
+
+$('viewWeeks').onclick=()=>setTrainingView('weeks');
+$('viewCalendar').onclick=()=>setTrainingView('calendar');
+$('calendar').addEventListener('click',event=>{
+ const button=event.target.closest('button[data-day]');if(!button)return;
+ setTrainingView('weeks');const day=$('day-'+button.dataset.day);if(!day)return;
+ day.closest('details').open=true;day.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});day.setAttribute('tabindex','-1');day.focus({preventScroll:true});
 });
