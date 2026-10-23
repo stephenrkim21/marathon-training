@@ -73,7 +73,7 @@
       "blurb": "Reduce running and lifting fatigue before race day."
     }
   ],
-  "status": "3:40-focused progressive build: this week is unchanged, including Saturday’s 8 miles. Future volume builds through 22, 25 and 28 miles, with regular cutbacks, several 35–42-mile weeks and a conditional 45-mile peak. Added miles are easy; goal-pace sessions and strength remain, followed by a three-week taper.",
+  "status": "3:40-focused progressive build: this week is unchanged, including Saturday’s 8 miles. Future volume builds through 22, 25 and 28 miles, with regular cutbacks, several 35–42-mile weeks and a conditional 45-mile peak. Added miles are easy; goal-pace sessions and strength remain, followed by a three-week taper. Training runs are scheduled Monday–Saturday, with Saturday long runs and Sunday rest; the Sunday marathon is the exception.",
   "weeks": [
     {
       "week": 1,
@@ -181,13 +181,15 @@
         {
           "date": "2026-10-26",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 3,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-10-27",
@@ -253,12 +255,12 @@
         {
           "date": "2026-11-01",
           "dow": 6,
-          "type": "easy",
-          "miles": 3,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. ",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -276,13 +278,15 @@
         {
           "date": "2026-11-02",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 4,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-11-03",
@@ -348,12 +352,12 @@
         {
           "date": "2026-11-08",
           "dow": 6,
-          "type": "easy",
-          "miles": 4,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. ",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -371,13 +375,15 @@
         {
           "date": "2026-11-09",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 5,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-11-10",
@@ -443,12 +449,12 @@
         {
           "date": "2026-11-15",
           "dow": 6,
-          "type": "easy",
-          "miles": 5,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -466,13 +472,15 @@
         {
           "date": "2026-11-16",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 5,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-11-17",
@@ -538,12 +546,12 @@
         {
           "date": "2026-11-22",
           "dow": 6,
-          "type": "easy",
-          "miles": 5,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -561,13 +569,15 @@
         {
           "date": "2026-11-23",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 5,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-11-24",
@@ -633,12 +643,12 @@
         {
           "date": "2026-11-29",
           "dow": 6,
-          "type": "easy",
-          "miles": 5,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -656,13 +666,15 @@
         {
           "date": "2026-11-30",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 5,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-12-01",
@@ -728,12 +740,12 @@
         {
           "date": "2026-12-06",
           "dow": 6,
-          "type": "easy",
-          "miles": 5,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -751,13 +763,15 @@
         {
           "date": "2026-12-07",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 5,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-12-08",
@@ -823,12 +837,12 @@
         {
           "date": "2026-12-13",
           "dow": 6,
-          "type": "easy",
-          "miles": 5,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -846,13 +860,15 @@
         {
           "date": "2026-12-14",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 5,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-12-15",
@@ -918,12 +934,12 @@
         {
           "date": "2026-12-20",
           "dow": 6,
-          "type": "easy",
-          "miles": 5,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -941,13 +957,15 @@
         {
           "date": "2026-12-21",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 6,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-12-22",
@@ -1013,12 +1031,12 @@
         {
           "date": "2026-12-27",
           "dow": 6,
-          "type": "easy",
-          "miles": 6,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -1036,13 +1054,15 @@
         {
           "date": "2026-12-28",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 7,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-12-29",
@@ -1108,12 +1128,12 @@
         {
           "date": "2027-01-03",
           "dow": 6,
-          "type": "easy",
-          "miles": 7,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -1131,13 +1151,15 @@
         {
           "date": "2027-01-04",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 5,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-01-05",
@@ -1203,12 +1225,12 @@
         {
           "date": "2027-01-10",
           "dow": 6,
-          "type": "easy",
-          "miles": 5,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -1226,13 +1248,15 @@
         {
           "date": "2027-01-11",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 6,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-01-12",
@@ -1298,12 +1322,12 @@
         {
           "date": "2027-01-17",
           "dow": 6,
-          "type": "easy",
-          "miles": 6,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -1321,13 +1345,15 @@
         {
           "date": "2027-01-18",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 6,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-01-19",
@@ -1393,12 +1419,12 @@
         {
           "date": "2027-01-24",
           "dow": 6,
-          "type": "easy",
-          "miles": 6,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -1416,13 +1442,15 @@
         {
           "date": "2027-01-25",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 5,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-01-26",
@@ -1488,12 +1516,12 @@
         {
           "date": "2027-01-31",
           "dow": 6,
-          "type": "easy",
-          "miles": 5,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -1511,13 +1539,15 @@
         {
           "date": "2027-02-01",
           "dow": 0,
-          "type": "rest",
-          "miles": 0,
-          "title": "Rest",
-          "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
-          "cal": null
+          "type": "easy",
+          "miles": 3,
+          "title": "Monday easy recovery run",
+          "paceKey": "recovery",
+          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
+          "pace": "Very relaxed · RPE 1–2/10",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-02-02",
@@ -1583,12 +1613,12 @@
         {
           "date": "2027-02-07",
           "dow": 6,
-          "type": "easy",
-          "miles": 3,
-          "title": "Recovery run",
-          "paceKey": "recovery",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. ",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Sunday rest",
+          "paceKey": null,
+          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "pace": "Rest",
           "cal": {
             "allDay": true
           }
@@ -1695,7 +1725,7 @@
     "A": "Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
     "B": "Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week."
   },
-  "progressionRule": "Treat future mileage as planned targets, not mileage owed. Advance only after two consistent preceding weeks at >=85% of adjusted targets, normal easy-running effort and recovery, and no pain affecting running. Otherwise repeat the last tolerated load and make quality easy. Build to five running days from November 23; do not compress five days into fewer runs or make up missed miles. Added volume stays easy. Keep at most one structured quality session per week; Thursday remains easy when Saturday includes goal pace. The 42–45-mile weeks are conditional on tolerating the preceding build, not mandatory. Keep recovery cutbacks and the three-week taper.",
+  "progressionRule": "Treat future mileage as planned targets, not mileage owed. Advance only after two consistent preceding weeks at >=85% of adjusted targets, normal easy-running effort and recovery, and no pain affecting running. Otherwise repeat the last tolerated load and make quality easy. Build to five running days from November 23; do not compress five days into fewer runs or make up missed miles. Added volume stays easy. Keep at most one structured quality session per week; Thursday remains easy when Saturday includes goal pace. The 42–45-mile weeks are conditional on tolerating the preceding build, not mandatory. Keep recovery cutbacks and the three-week taper. Recovery miles are on Monday, not Sunday. Keep Friday and Sunday free of scheduled running. Race day remains Sunday, February 14.",
   "sources": [
     "https://www.halhigdon.com/training-programs/marathon-training/novice-1-marathon/",
     "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
@@ -1703,7 +1733,7 @@
     "https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels",
     "https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon/"
   ],
-  "version": "stephen-340-sustained-volume-2026-10-23",
+  "version": "stephen-340-monday-saturday-2026-10-23",
   "qualityRule": "Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace.",
   "longRunProgression": {
     "readyStepMiles": 2,
