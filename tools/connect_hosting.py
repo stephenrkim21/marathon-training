@@ -40,8 +40,8 @@ def main():
         encoded=saved['password_hash'];secret=saved['worker_secret'];key=saved['state_key']
         print('Reusing your saved hosting configuration and password. No keys changed.')
     else:
-        password=getpass.getpass('Choose a NEW hosted app password (14+ characters): ')
-        if len(password)<14 or password!=getpass.getpass('Repeat hosted app password: '):raise ValueError('Passwords must match and contain at least 14 characters.')
+        password=getpass.getpass('Choose a NEW hosted app password (8+ characters): ')
+        if len(password)<8 or password!=getpass.getpass('Repeat hosted app password: '):raise ValueError('Passwords must match and contain at least 8 characters.')
         encoded=password_hash(password);secret=secrets.token_urlsafe(48);key=base64.b64encode(os.urandom(32)).decode()
         # Recoverable setup: interrupted runs reuse these keys instead of destroying access to hosted state.
         with config.open('x',opener=lambda path,flags:os.open(path,flags,0o600)) as out:
