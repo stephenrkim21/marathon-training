@@ -28,7 +28,7 @@
     ],
     "mp": [
       503,
-      510
+      515
     ]
   },
   "phases": [
@@ -46,7 +46,7 @@
         2,
         6
       ],
-      "blurb": "Earn consistent running first; relaxed strides and controlled effort work add purpose."
+      "blurb": "Earn consistent running first; short controlled goal-pace blocks begin November 5."
     },
     {
       "name": "Build endurance",
@@ -54,7 +54,7 @@
         7,
         10
       ],
-      "blurb": "Five running days when earned, purposeful weekly quality, and first controlled goal-pace practice."
+      "blurb": "Five running days when earned, weekly quality, and progressively longer goal-pace blocks."
     },
     {
       "name": "Marathon preparation",
@@ -73,14 +73,14 @@
       "blurb": "Reduce running and lifting fatigue before race day."
     }
   ],
-  "status": "3:40-focused build: establish four consistent run days, then earn a fifth easy day; one purposeful workout per week, mostly easy mileage, and a conditional peak of 40 miles. Goal pace is 8:23/mi. Progression depends on completed training and recovery; 3:40 is a target, not a prediction.",
+  "status": "3:40-focused build \u2014 short goal-pace practice begins November 5, progresses toward continuous marathon-pace work, and replaces existing faster sessions. Work blocks target 8:23\u20138:35/mi while controlled; most miles remain easy. Current mileage progression and recovery protections remain in place.",
   "weeks": [
     {
       "week": 1,
       "start": "2026-10-19",
       "end": "2026-10-25",
       "phase": "Transition",
-      "total": 17.01,
+      "total": 19.01,
       "cutback": false,
       "days": [
         {
@@ -148,10 +148,10 @@
           "date": "2026-10-24",
           "dow": 5,
           "type": "long",
-          "miles": 6,
+          "miles": 8,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
+          "desc": "8 miles easy if lifting soreness has settled and your stride feels normal. If soreness is still significant, stay at 6 miles or shorten further; no catch-up mileage. Keep this conversational, with no fast finish. Your Monday 5.01 and Wednesday/Thursday 3-mile runs already count toward this week. ",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -175,7 +175,7 @@
       "start": "2026-10-26",
       "end": "2026-11-01",
       "phase": "Build consistency",
-      "total": 16,
+      "total": 22,
       "cutback": false,
       "days": [
         {
@@ -193,10 +193,10 @@
           "date": "2026-10-27",
           "dow": 1,
           "type": "easy",
-          "miles": 3,
+          "miles": 5,
           "title": "Easy + relaxed strides + Strength A",
           "paceKey": "easy",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 4 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 4 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -217,10 +217,10 @@
           "date": "2026-10-29",
           "dow": 3,
           "type": "easy",
-          "miles": 4,
+          "miles": 6,
           "title": "Easy run",
           "paceKey": "easy",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
+          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -241,10 +241,10 @@
           "date": "2026-10-31",
           "dow": 5,
           "type": "long",
-          "miles": 6,
+          "miles": 8,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
+          "desc": "8 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -270,7 +270,7 @@
       "start": "2026-11-02",
       "end": "2026-11-08",
       "phase": "Build consistency",
-      "total": 18,
+      "total": 24,
       "cutback": false,
       "days": [
         {
@@ -288,10 +288,10 @@
           "date": "2026-11-03",
           "dow": 1,
           "type": "easy",
-          "miles": 3,
+          "miles": 5,
           "title": "Easy + relaxed strides + Strength A",
           "paceKey": "easy",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 4 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 4 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -312,11 +312,11 @@
           "date": "2026-11-05",
           "dow": 3,
           "type": "quality",
-          "miles": 4,
-          "title": "Relaxed pickups",
-          "paceKey": "steady",
-          "desc": "4 miles total: begin with at least 1.5 miles easy, then 5 \u00d7 1 minute brisk at RPE 6/10 with 90 seconds easy between; finish easy. Stay smooth rather than sprinting. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Brisk portions: RPE 6/10; recoveries easy",
+          "miles": 6,
+          "title": "Goal-pace introduction \u2014 2 \u00d7 5 minutes",
+          "paceKey": "mp",
+          "desc": "6 miles total: start with 1.5 miles easy, then 2 \u00d7 5 minutes at 8:23\u20138:35/mi with 3 minutes easy jogging between. Run the remaining distance easy. This replaces the planned pickups; do not add extra repetitions. Goal pace must feel controlled, roughly RPE 5\u20136/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
+          "pace": "Work blocks: 8:23\u20138:35/mi; other running easy",
           "cal": {
             "allDay": true
           }
@@ -336,10 +336,10 @@
           "date": "2026-11-07",
           "dow": 5,
           "type": "long",
-          "miles": 7,
+          "miles": 9,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
+          "desc": "9 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -365,7 +365,7 @@
       "start": "2026-11-09",
       "end": "2026-11-15",
       "phase": "Build consistency",
-      "total": 20,
+      "total": 26,
       "cutback": false,
       "days": [
         {
@@ -383,10 +383,10 @@
           "date": "2026-11-10",
           "dow": 1,
           "type": "easy",
-          "miles": 4,
+          "miles": 6,
           "title": "Easy + relaxed strides + Strength A",
           "paceKey": "easy",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 4 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
+          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 4 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -407,11 +407,11 @@
           "date": "2026-11-12",
           "dow": 3,
           "type": "quality",
-          "miles": 4,
-          "title": "Controlled tempo introduction",
-          "paceKey": "steady",
-          "desc": "4 miles total: 1 mile easy, 3 \u00d7 4 minutes at controlled RPE 6/10 with 2 minutes easy between, then easy running to complete the distance. Finish able to do one more repetition. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Work portions: controlled RPE 6/10",
+          "miles": 6,
+          "title": "Goal-pace development \u2014 2 \u00d7 8 minutes",
+          "paceKey": "mp",
+          "desc": "6 miles total: 1.5 miles easy, then 2 \u00d7 8 minutes at 8:23\u20138:35/mi with 3 minutes easy jogging between. Finish the remaining miles easy. Repeat the previous 2 \u00d7 5-minute session instead if that was not controlled. Goal pace must feel controlled, roughly RPE 5\u20136/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
+          "pace": "Work blocks: 8:23\u20138:35/mi; other running easy",
           "cal": {
             "allDay": true
           }
@@ -431,10 +431,10 @@
           "date": "2026-11-14",
           "dow": 5,
           "type": "long",
-          "miles": 8,
+          "miles": 10,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "8 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
+          "desc": "10 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -460,7 +460,7 @@
       "start": "2026-11-16",
       "end": "2026-11-22",
       "phase": "Build consistency",
-      "total": 16,
+      "total": 22,
       "cutback": true,
       "days": [
         {
@@ -478,10 +478,10 @@
           "date": "2026-11-17",
           "dow": 1,
           "type": "easy",
-          "miles": 3,
+          "miles": 5,
           "title": "Easy + relaxed strides + Strength A",
           "paceKey": "easy",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 4 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 4 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -502,10 +502,10 @@
           "date": "2026-11-19",
           "dow": 3,
           "type": "easy",
-          "miles": 4,
+          "miles": 5,
           "title": "Easy run",
           "paceKey": "easy",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -526,10 +526,10 @@
           "date": "2026-11-21",
           "dow": 5,
           "type": "long",
-          "miles": 6,
+          "miles": 8,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
+          "desc": "8 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -539,10 +539,10 @@
           "date": "2026-11-22",
           "dow": 6,
           "type": "easy",
-          "miles": 3,
+          "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. ",
+          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. ",
           "pace": "Very relaxed \u00b7 RPE 1\u20132/10",
           "cal": {
             "allDay": true
@@ -555,7 +555,7 @@
       "start": "2026-11-23",
       "end": "2026-11-29",
       "phase": "Build consistency",
-      "total": 24,
+      "total": 26,
       "cutback": false,
       "days": [
         {
@@ -573,10 +573,10 @@
           "date": "2026-11-24",
           "dow": 1,
           "type": "easy",
-          "miles": 4,
+          "miles": 5,
           "title": "Easy + relaxed strides + Strength A",
           "paceKey": "easy",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -598,10 +598,10 @@
           "dow": 3,
           "type": "quality",
           "miles": 5,
-          "title": "Steady endurance blocks",
-          "paceKey": "steady",
-          "desc": "5 miles total: 1.5 miles easy, 3 \u00d7 5 minutes at steady RPE 5\u20136/10 with 2 minutes easy between, then cool down to 5 miles. Pace follows current fitness. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Steady portions: RPE 5\u20136/10",
+          "title": "Goal-pace consolidation \u2014 2 \u00d7 8 minutes",
+          "paceKey": "mp",
+          "desc": "5 miles total: 1.5 miles easy, then 2 \u00d7 8 minutes at 8:23\u20138:35/mi with 3 minutes easy jogging between. Finish easy to 5 miles. This repeats the previous dose while the fifth run is introduced; do not add faster repetitions. Goal pace must feel controlled, roughly RPE 5\u20136/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
+          "pace": "Work blocks: 8:23\u20138:35/mi; other running easy",
           "cal": {
             "allDay": true
           }
@@ -621,10 +621,10 @@
           "date": "2026-11-28",
           "dow": 5,
           "type": "long",
-          "miles": 9,
+          "miles": 10,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "9 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
+          "desc": "10 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -650,7 +650,7 @@
       "start": "2026-11-30",
       "end": "2026-12-06",
       "phase": "Build endurance",
-      "total": 26,
+      "total": 28,
       "cutback": false,
       "days": [
         {
@@ -668,10 +668,10 @@
           "date": "2026-12-01",
           "dow": 1,
           "type": "easy",
-          "miles": 4,
+          "miles": 5,
           "title": "Easy + relaxed strides + Strength A",
           "paceKey": "easy",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
+          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 \u00d7 15 seconds of relaxed, quick running near the end, with 60\u201390 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -693,10 +693,10 @@
           "dow": 3,
           "type": "quality",
           "miles": 5,
-          "title": "First goal-pace practice",
+          "title": "Goal-pace mile repetitions \u2014 2 \u00d7 1 mile",
           "paceKey": "mp",
-          "desc": "5 miles total: 1.5 miles easy, 2 \u00d7 8 minutes at 8:23\u20138:35/mi with 3 minutes easy between, then easy running to 5 miles. If goal pace feels harder than controlled RPE 5\u20136/10, slow down or finish easy. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Work blocks: 8:23\u20138:35/mi; warm-up/cool-down easy",
+          "desc": "5 miles total: 1.5 miles easy, then 2 \u00d7 1 mile at 8:23\u20138:35/mi with 3 minutes easy jogging between. Finish easy to 5 miles. Keep the second repetition as controlled as the first. Goal pace must feel controlled, roughly RPE 5\u20136/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
+          "pace": "Work blocks: 8:23\u20138:35/mi; other running easy",
           "cal": {
             "allDay": true
           }
@@ -716,10 +716,10 @@
           "date": "2026-12-05",
           "dow": 5,
           "type": "long",
-          "miles": 10,
+          "miles": 11,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "10 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
+          "desc": "11 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -745,7 +745,7 @@
       "start": "2026-12-07",
       "end": "2026-12-13",
       "phase": "Build endurance",
-      "total": 28,
+      "total": 30,
       "cutback": false,
       "days": [
         {
@@ -787,11 +787,11 @@
           "date": "2026-12-10",
           "dow": 3,
           "type": "quality",
-          "miles": 5,
-          "title": "Cruise tempo repetitions",
-          "paceKey": "steady",
-          "desc": "5 miles total: at least 1 mile easy, 3 \u00d7 6 minutes at comfortably hard RPE 6\u20137/10 with 2 minutes easy between, then cool down to 5 miles. Use an effort you can repeat evenly; no forced target pace. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Tempo portions: RPE 6\u20137/10, based on current fitness",
+          "miles": 6,
+          "title": "Goal-pace progression \u2014 3 \u00d7 1 mile",
+          "paceKey": "mp",
+          "desc": "6 miles total: 1.5 miles easy, then 3 \u00d7 1 mile at 8:23\u20138:35/mi with 2 minutes easy jogging between. Finish the remaining distance easy. Add the third repetition only if the previous session and subsequent recovery were good; otherwise repeat 2 \u00d7 1 mile. Goal pace must feel controlled, roughly RPE 5\u20136/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
+          "pace": "Work blocks: 8:23\u20138:35/mi; other running easy",
           "cal": {
             "allDay": true
           }
@@ -811,10 +811,10 @@
           "date": "2026-12-12",
           "dow": 5,
           "type": "long",
-          "miles": 11,
+          "miles": 12,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "11 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
+          "desc": "12 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75\u201390 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
           "pace": "Conversational effort \u00b7 RPE 2\u20133/10",
           "cal": {
             "allDay": true
@@ -840,7 +840,7 @@
       "start": "2026-12-14",
       "end": "2026-12-20",
       "phase": "Build endurance",
-      "total": 23,
+      "total": 24,
       "cutback": true,
       "days": [
         {
@@ -919,10 +919,10 @@
           "date": "2026-12-20",
           "dow": 6,
           "type": "easy",
-          "miles": 3,
+          "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. ",
+          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. ",
           "pace": "Very relaxed \u00b7 RPE 1\u20132/10",
           "cal": {
             "allDay": true
@@ -1168,10 +1168,10 @@
           "dow": 3,
           "type": "quality",
           "miles": 5,
-          "title": "Tempo maintenance \u2014 reduced-volume week",
-          "paceKey": "steady",
-          "desc": "5 miles total: 1 mile easy, 3 \u00d7 5 minutes at controlled RPE 6\u20137/10 with 2 minutes easy between, then cool down to 5 miles. Keep the cutback week a cutback; do not add extra repetitions. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Tempo portions: RPE 6\u20137/10",
+          "title": "Goal-pace maintenance \u2014 cutback week",
+          "paceKey": "mp",
+          "desc": "5 miles total: 1.5 miles easy, then 2 \u00d7 1 mile at 8:23/mi target with 3 minutes easy jogging between. Finish easy to 5 miles. Keep the cutback week light; omit the blocks if still tired from the January 2 long run. Goal pace must feel controlled, roughly RPE 5\u20136/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
+          "pace": "Work miles: 8:23/mi target; other running easy",
           "cal": {
             "allDay": true
           }
@@ -1695,7 +1695,7 @@
     "A": "Strength A after Tuesday: split squat 6\u20138/side, push-up 6\u201312, single-leg glute bridge 8\u201312/side, straight-knee calf raise 10\u201315/side, side plank 20\u201330 sec/side. One set for the first two full weeks, then two sets; finish each with 2\u20133 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
     "B": "Strength B after Thursday: row or assisted pull-up 6\u201312, dead bug 6\u20138/side, side plank 20\u201330 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6\u20138/side, hamstring bridge walkout 4\u20136, and bent-knee calf raise 10\u201315/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week."
   },
-  "progressionRule": "Advance only after two weeks at >=85% of the adjusted mileage target, at least four run days in each, and low soreness/fatigue with no pain. Otherwise repeat the last completed load and make quality easy. The fifth run adds easy frequency, not catch-up mileage. Do not compress five run days into fewer days. Keep one quality workout per week; in a long-run goal-pace week, Thursday stays easy.",
+  "progressionRule": "Advance only after two weeks at >=85% of the adjusted mileage target, at least four run days in each, and low soreness/fatigue with no pain. Otherwise repeat the last completed load and make quality easy. The fifth run adds easy frequency, not catch-up mileage. Do not compress five run days into fewer days. Keep one quality workout per week; in a long-run goal-pace week, Thursday stays easy. Hold this revised build for the next two to three weeks before considering more mileage. Added volume stays easy; do not add intervals, repetitions or extra hard long-run finishes at the same time.",
   "sources": [
     "https://www.halhigdon.com/training-programs/marathon-training/novice-1-marathon/",
     "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
@@ -1703,7 +1703,7 @@
     "https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels",
     "https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon/"
   ],
-  "version": "stephen-340-focused-2026-10-21",
+  "version": "stephen-340-early-goal-pace-2026-10-22",
   "qualityRule": "Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace.",
   "longRunProgression": {
     "readyStepMiles": 2,
@@ -1723,6 +1723,73 @@
       "date": "2027-01-10",
       "title": "3:40 readiness review",
       "review": "Review consistency, recovery, the January 2 long run, and how 8:23\u20138:35 blocks felt. Keep 3:40 as the A goal only if the pace is controlled and endurance is progressing. Difficulty at goal pace is a reason to adjust the race target, not force faster easy runs."
+    }
+  ],
+  "racePreparation": {
+    "trainingPriority": "Consistent weeks and recovery take priority over hitting a higher peak number. Keep long runs mostly easy; practice controlled goal-pace blocks only when readiness conditions are met.",
+    "fuelPractice": "For runs lasting 1\u20132.5 hours, build toward 30\u201360 g carbohydrate per hour using familiar products. For longer race-duration efforts, higher intakes may help but require gradual gut training and individual tolerance; never introduce an untested intake on race day.",
+    "goalReview": "Use late-December/January training, a suitable tune-up race if available, and long-run recovery to review the A goal. Shorter-race equivalence is supportive evidence only; marathon endurance and fueling must also support the target."
+  },
+  "goalPaceProgression": [
+    {
+      "date": "2026-11-05",
+      "workout": "Goal-pace introduction \u2014 2 \u00d7 5 minutes",
+      "pace": "Work blocks: 8:23\u20138:35/mi; other running easy"
+    },
+    {
+      "date": "2026-11-12",
+      "workout": "Goal-pace development \u2014 2 \u00d7 8 minutes",
+      "pace": "Work blocks: 8:23\u20138:35/mi; other running easy"
+    },
+    {
+      "date": "2026-11-26",
+      "workout": "Goal-pace consolidation \u2014 2 \u00d7 8 minutes",
+      "pace": "Work blocks: 8:23\u20138:35/mi; other running easy"
+    },
+    {
+      "date": "2026-12-03",
+      "workout": "Goal-pace mile repetitions \u2014 2 \u00d7 1 mile",
+      "pace": "Work blocks: 8:23\u20138:35/mi; other running easy"
+    },
+    {
+      "date": "2026-12-10",
+      "workout": "Goal-pace progression \u2014 3 \u00d7 1 mile",
+      "pace": "Work blocks: 8:23\u20138:35/mi; other running easy"
+    },
+    {
+      "date": "2026-12-24",
+      "workout": "Three miles at goal marathon pace",
+      "pace": "Middle 3 mi: 8:23/mi target; otherwise steady effort"
+    },
+    {
+      "date": "2027-01-02",
+      "workout": "14-mile long run with conditional goal-pace finish",
+      "pace": "First 11 mi easy; final 3 mi at 8:23\u20138:35 only if ready"
+    },
+    {
+      "date": "2027-01-07",
+      "workout": "Goal-pace maintenance \u2014 cutback week",
+      "pace": "Work miles: 8:23/mi target; other running easy"
+    },
+    {
+      "date": "2027-01-14",
+      "workout": "Four miles at goal marathon pace",
+      "pace": "Middle 4 mi: 8:23/mi target; otherwise steady effort"
+    },
+    {
+      "date": "2027-01-28",
+      "workout": "Taper goal-pace reminder",
+      "pace": "Middle 3 mi: 8:23/mi target, controlled"
+    },
+    {
+      "date": "2027-02-04",
+      "workout": "Short goal-pace repetitions",
+      "pace": "Work miles: 8:23/mi; other running easy"
+    },
+    {
+      "date": "2027-02-11",
+      "workout": "Race-week pace reminder",
+      "pace": "Short work blocks: 8:23/mi; otherwise very easy"
     }
   ]
 }
