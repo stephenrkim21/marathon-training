@@ -73,7 +73,7 @@ function setTrainingView(view){
 function showActionNotice(message){$('actionNotice').textContent=message;$('actionNotice').hidden=false;}
 function renderTrainingOverview(plan,runs){
  const now=today(),current=plan.weeks.find(w=>w.start<=now&&now<=w.end);
- const all=plan.weeks.flatMap(w=>w.days),first=plan.weeks[0]?.start;
+ const all=plan.weeks.flatMap(w=>w.days),first=all[0]?.date;
  const plannedToDate=all.filter(d=>d.date<=now).reduce((n,d)=>n+d.miles,0);
  const actualToDate=miles(totals(runs.filter(r=>r.date>=first&&r.date<=now)).distance);
  const weekly=current?miles(totals(runs.filter(r=>r.date>=current.start&&r.date<=current.end)).distance):0;
@@ -87,10 +87,10 @@ function renderTrainingOverview(plan,runs){
  const months=new Map();
  for(const day of all){const month=day.date.slice(0,7);if(!months.has(month))months.set(month,[]);months.get(month).push(day);}
  $('calendar').innerHTML='<p class="calendar-help">Select a day to open its workouts. ✓ indicates a Garmin run; orange indicates planned quality or race day.</p>'+[...months].map(([month,days])=>{
-  const offset=(new Date(month+'-01T12:00:00').getDay()+6)%7;
+  const offset=new Date(month+'-01T12:00:00').getDay();
   const count=new Date(Number(month.slice(0,4)),Number(month.slice(5,7)),0).getDate();
   const map=new Map(days.map(d=>[Number(d.date.slice(8)),d]));
-  return `<article class="calendar-month"><h3>${new Date(month+'-01T12:00:00').toLocaleDateString('en-US',{month:'long',year:'numeric'})}</h3><div class="calendar-grid">${['M','T','W','T','F','S','S'].map(d=>`<span class="calendar-dow">${d}</span>`).join('')}${'<span></span>'.repeat(offset)}${Array.from({length:count},(_,i)=>{
+  return `<article class="calendar-month"><h3>${new Date(month+'-01T12:00:00').toLocaleDateString('en-US',{month:'long',year:'numeric'})}</h3><div class="calendar-grid">${['S','M','T','W','T','F','S'].map(d=>`<span class="calendar-dow">${d}</span>`).join('')}${'<span></span>'.repeat(offset)}${Array.from({length:count},(_,i)=>{
    const d=map.get(i+1);if(!d)return `<span class="calendar-outside">${i+1}</span>`;
    const actual=runs.filter(r=>r.date===d.date),done=miles(totals(actual).distance);
    return `<button type="button" data-day="${d.date}" class="calendar-day ${d.date===now?'is-today':''} ${d.type==='quality'||d.type==='race'?'is-quality':''} ${actual.length?'is-done':''}" aria-label="${esc(dateLabel(d.date)+': '+d.title+', '+d.miles+' planned miles'+(actual.length?', '+done.toFixed(1)+' completed miles':''))}"><small>${i+1}${actual.length?' ✓':''}</small><b>${d.miles||'—'}</b><span>${actual.length?done.toFixed(1)+' done':d.miles?'mi':'rest'}</span></button>`;
@@ -98,13 +98,35 @@ function renderTrainingOverview(plan,runs){
  }).join('');
  setTrainingView(trainingView);
 }
+function sundayWeeks(weeks){
+ const groups=new Map();
+ for(const week of weeks){
+  for(const day of week.days){
+   const date=new Date(day.date+'T12:00:00Z');
+   date.setUTCDate(date.getUTCDate()-date.getUTCDay());
+   const start=date.toISOString().slice(0,10);
+   date.setUTCDate(date.getUTCDate()+6);
+   const end=date.toISOString().slice(0,10);
+   if(!groups.has(start)){
+    groups.set(start,{week:groups.size+1,start,end,phase:week.phase,total:0,days:[]});
+   }
+   const group=groups.get(start);
+   // Use the phase of the main training block while keeping each day's original workout rules.
+   if(day.date!==start)group.phase=week.phase;
+   group.days.push({...day,trainingWeek:week.week});
+   group.total=Math.round((group.total+Number(day.miles||0))*100)/100;
+  }
+ }
+ return [...groups.values()];
+}
 async function load(){
  $('refresh').disabled=true;
  try{
  const response=await fetch('/api/dashboard',{cache:'no-store'});
  if(response.status===401){location.replace('/login');return;}
  if(!response.ok){const failure=await response.json();throw Error(failure.error||'Could not load your journal. Try refreshing.');}
- const {plan,runs,sync,syncedAt,coach,hosting,actionResults}=await response.json();
+ const {plan:originalPlan,runs,sync,syncedAt,coach,hosting,actionResults}=await response.json();
+ const plan={...originalPlan,weeks:sundayWeeks(originalPlan.weeks)};
  hosted=!!hosting;
  renderCoach(coach);
  if(hosting){
@@ -130,7 +152,7 @@ async function load(){
  const wr=runs.filter(r=>r.date>=w.start&&r.date<=w.end),t=totals(wr),actual=miles(t.distance);
  return `<details class="training-week ${w===current?'current-week':''}" id="week-${w.week}" ${(open.has(`week-${w.week}`)||(first&&w===current))?'open':''}><summary><div><span class="week-label">Week ${w.week} · ${esc(w.phase)}</span><span class="week-date">${dateLabel(w.start)} – ${dateLabel(w.end)}</span></div><div class="week-total">${actual.toFixed(1)} / ${w.total} mi<small>${duration(t.moving)} completed · ${wr.length} runs</small></div></summary><div class="progress"><i style="width:${Math.min(100,100*actual/w.total)||0}%"></i></div>${w.days.map(d=>{
  const dr=wr.filter(r=>r.date===d.date);
- return `<div class="day ${d.date===today()?'today':''}" id="day-${d.date}"><div class="date">${new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'short'})}<strong>${d.date.slice(8)}</strong></div><div class="workout"><h4>Scheduled workouts</h4>${renderWorkouts(d,w.week,plan.strength)}</div><div class="planned">${d.miles?d.miles+' mi':'Rest'}<small>${d.miles?esc(d.pace):'Recovery matters'}</small></div>${dr.length?dr.map(activity).join(''):`<div class="no-run">${d.date<today()&&d.miles?'No completed run recorded':d.miles?'Planned workout':'Rest day'} </div>`}</div>`}).join('')}</details>`;
+ return `<div class="day ${d.date===today()?'today':''}" id="day-${d.date}"><div class="date">${new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'short'})}<strong>${d.date.slice(8)}</strong></div><div class="workout"><h4>Scheduled workouts</h4>${renderWorkouts(d,d.trainingWeek,plan.strength)}</div><div class="planned">${d.miles?d.miles+' mi':'Rest'}<small>${d.miles?esc(d.pace):'Recovery matters'}</small></div>${dr.length?dr.map(activity).join(''):`<div class="no-run">${d.date<today()&&d.miles?'No completed run recorded':d.miles?'Planned workout':'Rest day'} </div>`}</div>`}).join('')}</details>`;
  }).join('');
  $('current').onclick=()=>{setTrainingView('weeks');if(current){const el=$(`week-${current.week}`);el.open=true;el.scrollIntoView({behavior:'smooth',block:'start'})}};
  }catch(e){$('syncState').textContent=e.message;}finally{$('refresh').disabled=false;}
