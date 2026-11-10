@@ -24,6 +24,8 @@ def verify(password, encoded):
     except (ValueError, TypeError):
         return False
 
+RUN_TYPES = {'running', 'trail_running', 'treadmill_running', 'track_running', 'virtual_run', 'indoor_running'}
+
 class Store:
     def __init__(self, directory=DATA):
         self.directory = Path(directory)
@@ -48,9 +50,16 @@ class Store:
             row = db.execute('SELECT value FROM meta WHERE key=?', (key,)).fetchone()
         return json.loads(row[0]) if row else None
 
-    def runs(self):
+    def activities(self):
         with self.db() as db:
             return sorted([json.loads(r[0]) for r in db.execute('SELECT body FROM activities')], key=lambda a:a['start'], reverse=True)
+
+    def runs(self):
+        # Records saved by the run-only sync have no activity type.
+        return [a for a in self.activities() if a.get('type', 'running') in RUN_TYPES]
+
+    def workouts(self):
+        return [a for a in self.activities() if a.get('type', 'running') not in RUN_TYPES]
 
     def upsert(self, activities):
         with self.db() as db:
@@ -82,11 +91,10 @@ class Store:
         return True
 
 def compact(a):
-    if a.get('activityType',{}).get('typeKey') not in {'running','trail_running','treadmill_running','track_running','virtual_run','indoor_running'}:
-        return None
+    activity_type = (a.get('activityType') or {}).get('typeKey') or 'workout'
     start = a.get('startTimeLocal')
     if not start or not a.get('activityId'):return None
-    return {'id':str(a['activityId']), 'name':a.get('activityName','Run'), 'date':start[:10], 'start':start,
+    return {'id':str(a['activityId']), 'type':activity_type, 'name':a.get('activityName') or activity_type.replace('_',' ').capitalize(), 'date':start[:10], 'start':start,
             'distance':max(0,float(a.get('distance') or 0)), 'moving':max(0,float(a.get('movingDuration') or a.get('duration') or 0)),
             'elapsed':max(0,float(a.get('elapsedDuration') or a.get('duration') or 0)),
             'hr':a.get('averageHR'), 'maxHr':a.get('maxHR'), 'deviceId':str(a.get('deviceId') or '')}
@@ -115,7 +123,7 @@ class Sync:
             plan = json.loads((ROOT/'public/plan.json').read_text())
             start = (date.fromisoformat(plan['weeks'][0]['start'])-timedelta(days=56)).isoformat()
             # Initial history backfill; subsequent runs rescan latest 100 for edits and late uploads.
-            initial = not self.store.meta('backfilled') or self.store.meta('history_start')!=start
+            initial = not self.store.meta('workouts_backfilled') or self.store.meta('history_start')!=start
             found = []
             completed = False
             for offset in range(0, 10000 if initial else 100, 100):
@@ -133,10 +141,10 @@ class Sync:
                 for file in (self.store.directory / 'garmin').rglob('*'):
                     if file.is_file():file.chmod(0o600)
             if initial and completed:
-                self.store.meta('backfilled',True)
+                self.store.meta('workouts_backfilled',True)
                 self.store.meta('history_start',start)
             self.store.meta('syncedAt',datetime.now(timezone.utc).isoformat())
-            self.store.meta('sync', {'state':'ready','message':'Garmin connected', 'deviceFilter':device or 'All running devices'})
+            self.store.meta('sync', {'state':'ready','message':'Garmin connected', 'deviceFilter':device or 'All Garmin devices'})
             self.failures = 0
         except Exception as e:
             # Never expose upstream errors: they can contain session data or credentials.
