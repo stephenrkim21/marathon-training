@@ -4,7 +4,7 @@ import json
 import os
 import tempfile
 import unittest
-from datetime import date,datetime,timezone
+from datetime import date,datetime,timedelta,timezone
 from pathlib import Path
 from unittest.mock import patch
 os.environ['BACKGROUND_ENABLED']='0'
@@ -134,5 +134,26 @@ class Tests(unittest.TestCase):
   class Client:
    def get_activities(self,*args):return [raw]
   sync=Sync(self.store,Client);sync.once();sync.once();self.assertEqual(len(self.store.runs()),1);self.assertEqual(self.store.runs()[0]['hr'],140)
+
+ def test_all_activity_backfill_revisits_run_only_history(self):
+  self.store.meta('backfilled',True)
+  self.add_run(1,'2026-10-20')
+  self.store.meta('history_start',(date.fromisoformat(self.base['weeks'][0]['start'])-timedelta(days=56)).isoformat())
+  fetched=[]
+  class Client:
+   def get_activities(self,offset,limit):
+    fetched.append(offset)
+    if offset==0:
+     return [{'activityId':i,'startTimeLocal':'2026-10-22 10:00:00','activityType':{'typeKey':'cycling'},'distance':8000,'duration':1500} for i in range(2,102)]
+    return [{'activityId':102,'startTimeLocal':'2026-10-21 10:00:00','activityType':{'typeKey':'strength_training'},'duration':1200}]
+  sync=Sync(self.store,Client)
+  with patch.dict(os.environ,{'GARMIN_DEVICE_ID':''}):
+   sync.once()
+   sync.once()
+  self.assertEqual(fetched,[0,100,0])
+  self.assertEqual([a['id'] for a in self.store.runs()],['1'])
+  self.assertEqual(len(self.store.workouts()),101)
+  self.assertEqual(self.store.workouts()[-1]['type'],'strength_training')
+  self.assertEqual(self.store.workouts()[-1]['distance'],0)
 
 if __name__=='__main__':unittest.main()
