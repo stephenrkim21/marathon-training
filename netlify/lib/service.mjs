@@ -18,6 +18,21 @@ function validate(path,b){
  else if(path==='/api/adaptive/approve'){if(typeof b.id!=='string'||!(/^[a-f0-9]{64}$/).test(b.id))throw Error('Invalid proposal.');}
  else throw Error('Unknown action.');
 }
+function publicPlan(plan){
+ return {...plan,weeks:plan.weeks.map(week=>({...week,days:week.days.map(day=>{
+  if(!/^Recovery check-in/.test(day.desc))return day;
+  return {...day,desc:day.miles?'Keep the whole run easy. Skip strides, faster blocks and leg strength today.':'Rest today. Skip catch-up mileage.'};
+ })}))};
+}
+function publicActivity(activity, fallbackType){
+ return {
+  type:activity.type??fallbackType,
+  date:activity.date,
+  distance:activity.distance,
+  moving:activity.moving,
+  elapsed:activity.elapsed,
+ };
+}
 export function createService({store,asset,env}){
  async function atomic(key,update){
   const s=store();
@@ -83,18 +98,28 @@ export function createService({store,asset,env}){
     return redirect('/',{'Set-Cookie':cookie(token)});
    }
    const token=(request.headers.get('cookie')??'').split(';').map(v=>v.trim()).find(v=>v.startsWith('session='))?.slice(8)??'';
-   const sessions=await s.get('sessions',{type:'json'})??[];
+   const sessions=/^[a-f0-9]{64}$/.test(token)?await s.get('sessions',{type:'json'})??[]:[];
    const ident=hash((env.ADMIN_PASSWORD_HASH??'')+token);
    const authorized=/^[a-f0-9]{64}$/.test(token)&&sessions.some(x=>x.expires>Date.now()&&equal(x.id,ident));
-   if(!authorized)return pathname.startsWith('/api/')?reply(401,{error:'Sign in required'}):redirect('/login');
+   if(!authorized&&method==='POST')return reply(401,{error:'Sign in required'});
    if(pathname==='/logout'&&method==='POST'){
     await atomic('sessions',v=>(v??[]).filter(x=>x.id!==ident&&x.expires>Date.now()));
-    return redirect('/login',{'Set-Cookie':cookie('',0)});
+    return redirect('/',{'Set-Cookie':cookie('',0)});
    }
    if(pathname==='/api/dashboard'&&(method==='GET'||method==='HEAD')){
     const journal=await s.get('journal',{type:'json'});
     if(!journal?.dashboard)return reply(503,{error:'Waiting for the first hosted sync. Run Garmin sync in GitHub Actions after connecting.'});
-    return reply(200,{...journal.dashboard,hosting:{intervalMinutes:60,pending:journal.commands?.length??0,lastProcessed:journal.dashboard.processedAt}});
+    const dashboard=journal.dashboard;
+    const hosting={intervalMinutes:60,lastProcessed:dashboard.processedAt};
+    if(authorized)return reply(200,{...dashboard,hosting:{...hosting,pending:journal.commands?.length??0}});
+    return reply(200,{
+     plan:publicPlan(dashboard.plan),
+     runs:(dashboard.runs??[]).map(activity=>publicActivity(activity,'running')),
+     workouts:(dashboard.workouts??[]).map(activity=>publicActivity(activity,'workout')),
+     syncedAt:dashboard.syncedAt,
+     sync:{message:dashboard.sync?.state==='ready'?'Garmin connected':'Waiting for Garmin sync'},
+     hosting,
+    });
    }
    if(method==='POST'&&pathname.startsWith('/api/')){
     let body;
