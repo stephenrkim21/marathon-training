@@ -50,7 +50,7 @@ def restore(payload, directory):
 
 def dashboard(store, planner):
     coach=planner.snapshot()
-    return {'plan':coach.pop('plan'),'coach':coach,'runs':store.runs(),'syncedAt':store.meta('syncedAt'),
+    return {'plan':coach.pop('plan'),'coach':coach,'runs':store.runs(),'workouts':store.workouts(),'syncedAt':store.meta('syncedAt'),
             'sync':store.meta('sync') or {'state':'needs_auth','message':'Connect Garmin on your Mac first.'},
             'processedAt':datetime.now(timezone.utc).isoformat()}
 

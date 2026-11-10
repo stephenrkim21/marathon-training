@@ -75,7 +75,7 @@ class App:
         if method=='POST':return send('404 Not Found',{'error':'Not found'})
         if path=='/api/dashboard':
             coach=self.planner.snapshot()
-            return send('200 OK',{'plan':coach.pop('plan'),'coach':coach,'runs':self.store.runs(), 'syncedAt':self.store.meta('syncedAt'),'sync':self.store.meta('sync') or {'state':'needs_auth','message':'Garmin has not been connected'}})
+            return send('200 OK',{'plan':coach.pop('plan'),'coach':coach,'runs':self.store.runs(),'workouts':self.store.workouts(), 'syncedAt':self.store.meta('syncedAt'),'sync':self.store.meta('sync') or {'state':'needs_auth','message':'Garmin has not been connected'}})
         name='index.html' if path=='/' else path.lstrip('/')
         file=(ROOT/'public'/name).resolve()
         if not file.is_relative_to((ROOT/'public').resolve()) or not file.is_file():return send('404 Not Found',{'error':'Not found'})
