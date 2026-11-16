@@ -436,25 +436,23 @@
         {
           "date": "2026-11-14",
           "dow": 5,
-          "type": "long",
-          "miles": 13,
-          "title": "Easy long run",
-          "paceKey": "long",
-          "desc": "13 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
-          "cal": {
-            "allDay": true
-          }
+          "type": "rest",
+          "miles": 0,
+          "title": "Long run moved to Sunday",
+          "paceKey": null,
+          "desc": "Saturday’s scheduled long run moved to Sunday, November 15.",
+          "pace": null,
+          "cal": null
         },
         {
           "date": "2026-11-15",
           "dow": 6,
-          "type": "rest",
-          "miles": 0,
-          "title": "Sunday rest",
-          "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
-          "pace": "Rest",
+          "type": "long",
+          "miles": 13,
+          "title": "Makeup long run",
+          "paceKey": "long",
+          "desc": "Makeup for Saturday’s scheduled long run.",
+          "pace": "Conversational effort · RPE 2–3/10",
           "cal": {
             "allDay": true
           }
@@ -466,30 +464,28 @@
       "start": "2026-11-16",
       "end": "2026-11-22",
       "phase": "Build consistency",
-      "total": 26,
+      "total": 19,
       "cutback": true,
       "days": [
         {
           "date": "2026-11-16",
           "dow": 0,
-          "type": "easy",
-          "miles": 5,
-          "title": "Monday easy recovery run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": {
-            "allDay": true
-          }
+          "type": "rest",
+          "miles": 0,
+          "title": "Rest after Sunday’s long run",
+          "paceKey": null,
+          "desc": "Rest or take an easy walk after Sunday’s makeup long run.",
+          "pace": null,
+          "cal": null
         },
         {
           "date": "2026-11-17",
           "dow": 1,
           "type": "easy",
-          "miles": 5,
-          "title": "Easy + relaxed strides + Strength A",
+          "miles": 4,
+          "title": "Easy recovery run",
           "paceKey": "easy",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 4 × 15 seconds of relaxed, quick running near the end, with 60–90 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
+          "desc": "Run 3–4 miles at conversational effort if your legs feel normal. Take another rest day if they still feel heavy.",
           "pace": "Conversational effort · RPE 2–3/10",
           "cal": {
             "allDay": true
@@ -510,10 +506,10 @@
           "date": "2026-11-19",
           "dow": 3,
           "type": "easy",
-          "miles": 6,
+          "miles": 5,
           "title": "Easy run",
           "paceKey": "easy",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
+          "desc": "Run 4–5 miles at conversational effort. Choose 4 if you are still recovering. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Keep strength light and optional this week. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
           "pace": "Conversational effort · RPE 2–3/10",
           "cal": {
             "allDay": true
@@ -537,7 +533,7 @@
           "miles": 10,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "10 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
+          "desc": "Run 10 miles at conversational effort if Thursday felt normal and your legs feel recovered. Cap the run at 8 miles if your legs still feel heavy. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
           "pace": "Conversational effort · RPE 2–3/10",
           "cal": {
             "allDay": true
