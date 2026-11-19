@@ -2,7 +2,6 @@
   command = "npm run build"
   publish = "netlify-public"
   functions = "netlify/functions"
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- austin-plan/public/ netlify/ netlify-public/ tools/ package.json package-lock.json netlify.toml"
 [build.environment]
   NODE_VERSION = "22"
 [functions]
