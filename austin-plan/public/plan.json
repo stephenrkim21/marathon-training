@@ -6,12 +6,12 @@
     "goal": "3:30:00"
   },
   "paces": {
-    "Recovery": "9:40–10:45/mi",
-    "Easy": "9:15–10:15/mi",
-    "Long run": "9:25–10:20/mi",
+    "Recovery": "10:10/mi",
+    "Easy": "9:45/mi",
+    "Long run": "9:45/mi",
     "Marathon": "8:01/mi race target. Follow the specific pace range in each workout as the blocks progress.",
     "Threshold": "Use the prescribed work-block pace and keep the effort controlled.",
-    "Interval": "Relaxed 15-second strides near 7:00–7:30/mi on flat ground, with full easy jog recoveries."
+    "Interval": "Relaxed 15-second strides near 7:15/mi on flat ground, with full easy jog recoveries."
   },
   "paceRanges": {
     "recovery": [
@@ -533,8 +533,8 @@
           "miles": 10,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 10 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Cap it at 8 miles if your legs still feel heavy from the makeup half marathon. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 10 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Cap it at 8 miles if your legs still feel heavy from the makeup half marathon. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -567,8 +567,8 @@
           "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -580,8 +580,8 @@
           "miles": 5,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 5 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -604,8 +604,8 @@
           "miles": 5,
           "title": "2 × 1 mile at controlled steady pace",
           "paceKey": "mp",
-          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 × 1 mile at 8:20–8:30/mi. Jog 0.5 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Find a flat route and keep both reps even. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:20–8:30/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1.5 miles at 9:45/mi. Run 2 × 1 mile at 8:25/mi. Jog 0.5 mile at 10:10/mi between reps. Cool down for 1 miles at 9:45/mi. Find a flat route and keep both reps even. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:25/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -628,8 +628,8 @@
           "miles": 11,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 11 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Start with 2 miles around 10:10/mi. Choose a route with easy access to water. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 11 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Start with 2 miles at 10:10/mi. Choose a route with easy access to water. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -662,8 +662,8 @@
           "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -675,8 +675,8 @@
           "miles": 5,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 5 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -688,8 +688,8 @@
           "miles": 3,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 3 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -701,8 +701,8 @@
           "miles": 5,
           "title": "2 × 1 mile of marathon-pace progression",
           "paceKey": "mp",
-          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 × 1 mile at 8:12–8:22/mi. Jog 0.5 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Keep your breathing controlled and finish with another rep in reserve. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:12–8:22/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1.5 miles at 9:45/mi. Run 2 × 1 mile at 8:17/mi. Jog 0.5 mile at 10:10/mi between reps. Cool down for 1 miles at 9:45/mi. Keep your breathing controlled and finish with another rep in reserve. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:17/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -725,8 +725,8 @@
           "miles": 12,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 12 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Pick a mostly flat route and aim for even effort after the first 2 miles. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 12 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Pick a mostly flat route and aim for even effort after the first 2 miles. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -759,8 +759,8 @@
           "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -772,8 +772,8 @@
           "miles": 5,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 5 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -785,8 +785,8 @@
           "miles": 3,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 3 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -798,8 +798,8 @@
           "miles": 6,
           "title": "3 × 1 mile of marathon-pace progression",
           "paceKey": "mp",
-          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 3 × 1 mile at 8:08–8:18/mi. Jog 0.25 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Run the first rep near the slower end and keep the third smooth. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:08–8:18/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1.5 miles at 9:45/mi. Run 3 × 1 mile at 8:13/mi. Jog 0.25 mile at 10:10/mi between reps. Cool down for 1 miles at 9:45/mi. Run the first rep at the listed pace and keep the third smooth. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:13/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -822,8 +822,8 @@
           "miles": 14,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 14 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Start at the slow end for 2 miles. Practice carrying the fuel you expect to use on race day. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 14 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Start at 10:10/mi for 2 miles. Practice carrying the fuel you expect to use on race day. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -856,8 +856,8 @@
           "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -869,8 +869,8 @@
           "miles": 5,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 5 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -893,8 +893,8 @@
           "miles": 5,
           "title": "2 steady miles during cutback week",
           "paceKey": "mp",
-          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 continuous miles at 8:15–8:25/mi. Cool down for 1.5 miles at 9:15–10:15/mi. Keep the effort around RPE 5 out of 10 and finish fresh. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:15–8:25/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1.5 miles at 9:45/mi. Run 2 continuous miles at 8:20/mi. Cool down for 1.5 miles at 9:45/mi. Keep the effort around RPE 5 out of 10 and finish fresh. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:20/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -917,8 +917,8 @@
           "miles": 11,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 11 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Use this cutback to absorb the last three weeks. Run on flat terrain and keep the finish easy. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 11 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Use this cutback to absorb the last three weeks. Run on flat terrain and keep the finish easy. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -951,8 +951,8 @@
           "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -964,8 +964,8 @@
           "miles": 5,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 5 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -977,8 +977,8 @@
           "miles": 4,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 4 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 4 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -990,8 +990,8 @@
           "miles": 6,
           "title": "3 continuous miles near marathon pace",
           "paceKey": "mp",
-          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 3 continuous miles at 8:05–8:12/mi. Cool down for 1.5 miles at 9:15–10:15/mi. Settle in gradually and keep the last mile controlled. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:05–8:12/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1.5 miles at 9:45/mi. Run 3 continuous miles at 8:08/mi. Cool down for 1.5 miles at 9:45/mi. Settle in gradually and keep the last mile controlled. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:08/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1014,8 +1014,8 @@
           "miles": 15,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 15 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Use a gently rolling route. Shorten your stride uphill and let the mile splits vary. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 15 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Use a gently rolling route. Shorten your stride uphill and let the mile splits vary. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1048,8 +1048,8 @@
           "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -1061,8 +1061,8 @@
           "miles": 6,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 6 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 6 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1074,8 +1074,8 @@
           "miles": 4,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 4 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 4 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1087,8 +1087,8 @@
           "miles": 7,
           "title": "2 × 2 miles near marathon pace",
           "paceKey": "mp",
-          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 × 2 miles at 8:01–8:08/mi. Jog 0.5 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Use a flat loop so you can compare both reps at the same effort. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:01–8:08/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1.5 miles at 9:45/mi. Run 2 × 2 miles at 8:04/mi. Jog 0.5 mile at 10:10/mi between reps. Cool down for 1 miles at 9:45/mi. Use a flat loop so you can compare both reps at the same effort. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:04/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1111,8 +1111,8 @@
           "miles": 16,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 16 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Wear your intended race shoes and test how your fueling feels late in the run. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 16 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Wear your intended race shoes and test how your fueling feels late in the run. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1145,8 +1145,8 @@
           "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -1158,8 +1158,8 @@
           "miles": 5,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 5 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1171,8 +1171,8 @@
           "miles": 3,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 3 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1184,8 +1184,8 @@
           "miles": 5,
           "title": "2 light marathon-pace miles",
           "paceKey": "mp",
-          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 continuous miles at 8:05–8:12/mi. Cool down for 1.5 miles at 9:15–10:15/mi. Use this as a rhythm check during the cutback. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:05–8:12/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1.5 miles at 9:45/mi. Run 2 continuous miles at 8:08/mi. Cool down for 1.5 miles at 9:45/mi. Use this as a rhythm check during the cutback. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:08/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1208,8 +1208,8 @@
           "miles": 13,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 13 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Keep the whole cutback long run conversational. Review how the January 2 run and recent pace reps felt before advancing. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 13 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Keep the whole cutback long run conversational. Review how the January 2 run and recent pace reps felt before advancing. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1242,8 +1242,8 @@
           "miles": 5,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 5 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 5 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -1255,8 +1255,8 @@
           "miles": 6,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 6 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 6 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1268,8 +1268,8 @@
           "miles": 5,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 5 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1281,8 +1281,8 @@
           "miles": 6,
           "title": "Easy run before Saturday",
           "paceKey": "easy",
-          "desc": "Run 6 miles at 9:15–10:15/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 6 miles at 9:45/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1305,8 +1305,8 @@
           "miles": 17,
           "title": "17-mile race rehearsal",
           "paceKey": "long",
-          "desc": "Run 7 miles at 9:25–10:20/mi, then 2 × 2 miles at 8:01–8:08/mi with 1 easy mile between. Finish with 5 miles at 9:25–10:20/mi. Use your race breakfast, shoes and fueling schedule. Run all 17 easy if goal pace feels strained or recent recovery has been poor. Stop at 3 hours.",
-          "pace": "9:25–10:20/mi easy · 8:01–8:08/mi for optional reps",
+          "desc": "Run 7 miles at 9:45/mi, then 2 × 2 miles at 8:04/mi with 1 mile at 9:45/mi between. Finish with 5 miles at 9:45/mi. Use your race breakfast, shoes and fueling schedule. Run all 17 easy if goal pace feels strained or recent recovery has been poor. Stop at 3 hours.",
+          "pace": "9:45/mi easy · 8:04/mi for optional reps",
           "cal": {
             "allDay": true
           },
@@ -1340,8 +1340,8 @@
           "miles": 5,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 5 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 5 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -1353,8 +1353,8 @@
           "miles": 7,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 7 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 7 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1366,8 +1366,8 @@
           "miles": 5,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 5 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1379,8 +1379,8 @@
           "miles": 6,
           "title": "Easy run before Saturday",
           "paceKey": "easy",
-          "desc": "Run 6 miles at 9:15–10:15/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 6 miles at 9:45/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1403,8 +1403,8 @@
           "miles": 19,
           "title": "Peak easy long run",
           "paceKey": "long",
-          "desc": "Run 19 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Run up to 19 miles only if you completed the 17-mile run and recovered normally. Otherwise repeat your last well-tolerated long run. Use race shoes and fueling on a rolling route, with easy effort throughout. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 19 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Run up to 19 miles only if you completed the 17-mile run and recovered normally. Otherwise repeat your last well-tolerated long run. Use race shoes and fueling on a rolling route, with easy effort throughout. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           },
@@ -1438,8 +1438,8 @@
           "miles": 4,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -1451,8 +1451,8 @@
           "miles": 5,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. Keep the last mile easy and skip heavy lifting.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 5 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. Keep the last mile easy and skip heavy lifting.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1464,8 +1464,8 @@
           "miles": 3,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 3 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1477,8 +1477,8 @@
           "miles": 6,
           "title": "3 miles at marathon pace during taper",
           "paceKey": "mp",
-          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 3 continuous miles at 8:01–8:06/mi. Cool down for 1.5 miles at 9:15–10:15/mi. Finish with energy to spare. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1.5 miles at 9:45/mi. Run 3 continuous miles at 8:01/mi. Cool down for 1.5 miles at 9:45/mi. Finish with energy to spare. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:01/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1501,8 +1501,8 @@
           "miles": 12,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 12 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Keep all 12 miles conversational. Use a familiar flat route to reduce fatigue. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 12 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Keep all 12 miles conversational. Use a familiar flat route to reduce fatigue. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1535,8 +1535,8 @@
           "miles": 3,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 3 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
-          "pace": "9:40–10:45/mi",
+          "desc": "Run 3 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "10:10/mi",
           "cal": {
             "allDay": true
           }
@@ -1548,8 +1548,8 @@
           "miles": 4,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 4 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. Keep the last mile easy and skip heavy lifting.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 4 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. Keep the last mile easy and skip heavy lifting.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1561,8 +1561,8 @@
           "miles": 3,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 3 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1574,8 +1574,8 @@
           "miles": 4,
           "title": "2 × 0.75 mile at marathon pace",
           "paceKey": "mp",
-          "desc": "Warm up for 1.25 miles at 9:15–10:15/mi. Run 2 × 0.75 mile at 8:01–8:06/mi. Jog 0.25 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Keep your stride relaxed and let the recovery jog reset your breathing. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1.25 miles at 9:45/mi. Run 2 × 0.75 mile at 8:01/mi. Jog 0.25 mile at 10:10/mi between reps. Cool down for 1 miles at 9:45/mi. Keep your stride relaxed and let the recovery jog reset your breathing. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:01/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1598,8 +1598,8 @@
           "miles": 8,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 8 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Run 8 easy miles on a familiar route. Finish feeling like you could comfortably keep going. Stop at 3 hours even if you have mileage left.",
-          "pace": "9:25–10:20/mi",
+          "desc": "Run 8 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Run 8 easy miles on a familiar route. Finish feeling like you could comfortably keep going. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1643,8 +1643,8 @@
           "miles": 4,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 4 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. Keep the last mile easy and skip heavy lifting.",
-          "pace": "9:15–10:15/mi",
+          "desc": "Run 4 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. Keep the last mile easy and skip heavy lifting.",
+          "pace": "9:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1667,8 +1667,8 @@
           "miles": 3,
           "title": "2 × 0.5 mile at marathon pace",
           "paceKey": "mp",
-          "desc": "Warm up for 1 miles at 9:15–10:15/mi. Run 2 × 0.5 mile at 8:01–8:06/mi. Jog 0.25 mile at 9:40–10:45/mi between reps. Cool down for 0.75 miles at 9:15–10:15/mi. Finish fresh and keep the rest of the day easy. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
-          "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy",
+          "desc": "Warm up for 1 miles at 9:45/mi. Run 2 × 0.5 mile at 8:01/mi. Jog 0.25 mile at 10:10/mi between reps. Cool down for 0.75 miles at 9:45/mi. Finish fresh and keep the rest of the day easy. If still fatigued or the pace feels hard early, finish the remaining mileage at 9:45/mi if comfortable.",
+          "pace": "8:01/mi work blocks · 9:45/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1691,8 +1691,8 @@
           "miles": 2,
           "title": "Optional race shakeout",
           "paceKey": "easy",
-          "desc": "Run 2 flat miles at 9:30–10:30/mi. Keep the first mile at the slow end and finish relaxed. Take full rest instead if you feel more comfortable resting before a race.",
-          "pace": "9:30–10:30/mi",
+          "desc": "Run 2 flat miles at 10:00/mi. Keep the first mile at 10:10/mi and finish relaxed. Take full rest instead if you feel more comfortable resting before a race.",
+          "pace": "10:00/mi",
           "cal": {
             "allDay": true
           }
@@ -1704,7 +1704,7 @@
           "miles": 26.2,
           "title": "Austin Marathon",
           "paceKey": "mp",
-          "desc": "Run 26.2 miles. Open miles 1–3 around 8:05–8:10/mi on flat ground and keep climbs controlled. Settle near 8:00/mi on flatter miles through mile 20, using even effort on climbs and descents. Aim to pass halfway near 1:45. After mile 20, hold your rhythm if you can still run smoothly. Use official mile markers and elapsed time to check pacing. Start your practiced fueling early and follow the same schedule you rehearsed.",
+          "desc": "Run 26.2 miles. Open miles 1–3 around 8:07/mi on flat ground and keep climbs controlled. Settle near 8:00/mi on flatter miles through mile 20, using even effort on climbs and descents. Aim to pass halfway near 1:45. After mile 20, hold your rhythm if you can still run smoothly. Use official mile markers and elapsed time to check pacing. Start your practiced fueling early and follow the same schedule you rehearsed.",
           "pace": "8:01/mi average · 3:30 finish",
           "cal": {
             "allDay": true
@@ -1725,7 +1725,7 @@
     "https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels",
     "https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon/"
   ],
-  "version": "stephen-330-2026-11-19",
+  "version": "stephen-330-exact-paces-2026-11-19",
   "qualityRule": "Warm-ups, recovery jogs and cool-downs are included in the stated mileage. Do the faster blocks when easy effort and recovery have been normal. If not, run easy at the same or shorter distance.",
   "longRunProgression": {
     "readyStepMiles": 2,
@@ -1745,7 +1745,7 @@
     {
       "date": "2027-01-17",
       "title": "3:30 readiness review",
-      "review": "Review your consistency, January 16 rehearsal and fueling. Keep 3:30 as your A goal if 8:01–8:08/mi felt controlled late in the long run and you recovered normally."
+      "review": "Review your consistency, January 16 rehearsal and fueling. Keep 3:30 as your A goal if 8:04/mi felt controlled late in the long run and you recovered normally."
     }
   ],
   "racePreparation": {
@@ -1767,57 +1767,57 @@
     {
       "date": "2026-11-26",
       "workout": "2 × 1 mile at controlled steady pace",
-      "pace": "8:20–8:30/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:25/mi work blocks · 9:45/mi easy"
     },
     {
       "date": "2026-12-03",
       "workout": "2 × 1 mile of marathon-pace progression",
-      "pace": "8:12–8:22/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:17/mi work blocks · 9:45/mi easy"
     },
     {
       "date": "2026-12-10",
       "workout": "3 × 1 mile of marathon-pace progression",
-      "pace": "8:08–8:18/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:13/mi work blocks · 9:45/mi easy"
     },
     {
       "date": "2026-12-17",
       "workout": "2 steady miles during cutback week",
-      "pace": "8:15–8:25/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:20/mi work blocks · 9:45/mi easy"
     },
     {
       "date": "2026-12-24",
       "workout": "3 continuous miles near marathon pace",
-      "pace": "8:05–8:12/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:08/mi work blocks · 9:45/mi easy"
     },
     {
       "date": "2026-12-31",
       "workout": "2 × 2 miles near marathon pace",
-      "pace": "8:01–8:08/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:04/mi work blocks · 9:45/mi easy"
     },
     {
       "date": "2027-01-07",
       "workout": "2 light marathon-pace miles",
-      "pace": "8:05–8:12/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:08/mi work blocks · 9:45/mi easy"
     },
     {
       "date": "2027-01-16",
       "workout": "17-mile race rehearsal",
-      "pace": "9:25–10:20/mi easy · 8:01–8:08/mi for optional reps"
+      "pace": "9:45/mi easy · 8:04/mi for optional reps"
     },
     {
       "date": "2027-01-28",
       "workout": "3 miles at marathon pace during taper",
-      "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:01/mi work blocks · 9:45/mi easy"
     },
     {
       "date": "2027-02-04",
       "workout": "2 × 0.75 mile at marathon pace",
-      "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:01/mi work blocks · 9:45/mi easy"
     },
     {
       "date": "2027-02-11",
       "workout": "2 × 0.5 mile at marathon pace",
-      "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy"
+      "pace": "8:01/mi work blocks · 9:45/mi easy"
     }
   ]
 }

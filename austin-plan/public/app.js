@@ -158,12 +158,39 @@ async function load(){
  const current=plan.weeks.find(w=>w.start<=localDate&&localDate<=w.end);
  const scheduledToday=current?.days.find(day=>day.date===localDate);
  const completedToday=runs.filter(run=>run.date===localDate);
- $('todayWorkout').innerHTML=scheduledToday
-  ?renderWorkouts(scheduledToday,scheduledToday.trainingWeek,plan.strength)
-  :'<p>No workout is scheduled for today.</p>';
- if(completedToday.length){
-  const completedMiles=miles(totals(completedToday).distance).toFixed(2);
-  $('todayWorkout').insertAdjacentHTML('beforeend',`<p class="today-result">${completedMiles} mi logged today in Garmin</p>`);
+ const date=$('todayDate');
+ date.dateTime=localDate;
+ date.textContent=new Date(localDate+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric'});
+ const todayCard=$('todayWorkout');
+ const detailsOpen=todayCard.querySelector('details')?.open??false;
+ const completedMiles=miles(totals(completedToday).distance).toFixed(2);
+ const status=completedToday.length?`${completedMiles} mi logged in Garmin`:scheduledToday?.miles?'Scheduled run':'Recovery';
+ if(scheduledToday){
+  const paceTarget=scheduledToday.pace?.match(/\d+:\d{2}\/mi/)?.[0];
+  const paceLabel=paceTarget?(scheduledToday.type==='quality'||scheduledToday.pace.includes('optional reps')?'Work pace':'Target pace'):'Effort';
+  todayCard.innerHTML=`<div class="today-summary">
+   <p class="today-status">${esc(status)}</p>
+   <h4>${esc(scheduledToday.title.split(' +')[0])}</h4>
+   <dl class="today-metrics">
+    <div><dt>Distance</dt><dd>${scheduledToday.miles} mi</dd></div>
+    <div><dt>${paceLabel}</dt><dd>${esc(paceTarget||(scheduledToday.miles?'Easy':'Rest'))}</dd></div>
+   </dl>
+   <details class="today-details"${detailsOpen?' open':''}>
+    <summary>Workout instructions</summary>
+    ${renderWorkouts(scheduledToday,scheduledToday.trainingWeek,plan.strength)}
+   </details>
+   <button id="todayJump" class="today-jump" type="button">Open in training plan <span aria-hidden="true">↓</span></button>
+  </div>`;
+  $('todayJump').onclick=()=>{
+   setTrainingView('weeks');
+   const day=$(`day-${localDate}`);
+   day.closest('details').open=true;
+   day.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+   day.setAttribute('tabindex','-1');
+   day.focus({preventScroll:true});
+  };
+ }else{
+  todayCard.textContent='No workout is scheduled for today.';
  }
  currentWeekNumber=current?.week??null;
  const weekRuns=current?runs.filter(r=>r.date>=current.start&&r.date<=current.end):[];
@@ -188,7 +215,7 @@ async function load(){
  $('current').onclick=()=>{setTrainingView('weeks');if(current){const el=$(`week-${current.week}`);el.open=true;el.scrollIntoView({behavior:'smooth',block:'start'})}};
  }catch(e){
   $('syncState').textContent=e.message;
-  if(!$('todayWorkout').querySelector('.session-list')){
+  if(!$('todayWorkout').querySelector('.today-summary')){
    $('todayWorkout').textContent='Could not load today’s schedule. Try refreshing.';
   }
  }finally{$('refresh').disabled=false;}
