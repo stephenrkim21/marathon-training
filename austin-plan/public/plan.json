@@ -73,7 +73,7 @@
       "blurb": "Three weeks of reduced mileage with brief marathon-pace practice and fresher legs for race day."
     }
   ],
-  "status": "3:30 Austin Marathon goal on February 14, 2027. January 17–23 is a conditional 50-mile peak with a 19-mile long run. Taper to 30, 22 and 9 pre-race miles.",
+  "status": "3:30 Austin Marathon goal on February 14, 2027. January 17–23 is a conditional 50-mile peak with a 18-mile long run. Taper to 30, 22 and 9 pre-race miles.",
   "weeks": [
     {
       "week": 1,
@@ -1363,10 +1363,10 @@
           "date": "2027-01-20",
           "dow": 2,
           "type": "easy",
-          "miles": 8,
+          "miles": 9,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 8 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "desc": "Run 9 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1400,10 +1400,10 @@
           "date": "2027-01-23",
           "dow": 5,
           "type": "long",
-          "miles": 19,
+          "miles": 18,
           "title": "Peak easy long run",
           "paceKey": "long",
-          "desc": "Run 19 miles at 9:45/mi on flat ground, with hills paced by conversational effort. Run up to 19 miles only if you completed the 17-mile run and recovered normally. Otherwise repeat your last well-tolerated long run. Use race shoes and fueling on a rolling route, with easy effort throughout. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "desc": "Run 18 miles or three hours, whichever comes first. Target 9:45/mi on flat sections and keep the effort conversational on hills. Attempt the full run if you completed the 17-mile rehearsal and recovered normally. Otherwise repeat your last well-tolerated long run. Wear your race shoes, use your practiced fueling from early in the run, and keep the downhills relaxed.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1725,7 +1725,7 @@
     "https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels",
     "https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon/"
   ],
-  "version": "stephen-330-exact-paces-50mi-2026-11-19",
+  "version": "stephen-330-exact-paces-50mi-2026-11-19-18mi-long",
   "qualityRule": "Warm-ups, recovery jogs and cool-downs are included in the stated mileage. Do the faster blocks when easy effort and recovery have been normal. If not, run easy at the same or shorter distance.",
   "longRunProgression": {
     "readyStepMiles": 2,
