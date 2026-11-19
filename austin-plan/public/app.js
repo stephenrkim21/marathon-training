@@ -167,7 +167,7 @@ async function load(){
  const status=completedToday.length?`${completedMiles} mi logged in Garmin`:scheduledToday?.miles?'Scheduled run':'Recovery';
  if(scheduledToday){
   const paceTarget=scheduledToday.pace?.match(/\d+:\d{2}\/mi/)?.[0];
-  const paceLabel=paceTarget?(scheduledToday.type==='quality'||scheduledToday.pace.includes('optional reps')?'Work pace':'Target pace'):'Effort';
+  const paceLabel=paceTarget?(scheduledToday.type==='quality'?'Work pace':scheduledToday.pace.includes('optional reps')?'Easy pace':'Target pace'):'Effort';
   todayCard.innerHTML=`<div class="today-summary">
    <p class="today-status">${esc(status)}</p>
    <h4>${esc(scheduledToday.title.split(' +')[0])}</h4>

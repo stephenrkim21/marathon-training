@@ -62,7 +62,7 @@
         11,
         14
       ],
-      "blurb": "Practice race fueling and pacing, progressing to a conditional 42-mile peak."
+      "blurb": "Practice race fueling and pacing. Build toward a conditional 50-mile peak with extra easy weekday miles."
     },
     {
       "name": "Taper",
@@ -73,7 +73,7 @@
       "blurb": "Three weeks of reduced mileage with brief marathon-pace practice and fresher legs for race day."
     }
   ],
-  "status": "3:30 Austin Marathon goal on February 14, 2027. Peak at up to 42 miles and a 19-mile long run if the buildup is consistent. Taper to 30, 22 and 9 pre-race miles.",
+  "status": "3:30 Austin Marathon goal on February 14, 2027. January 17–23 is a conditional 50-mile peak with a 19-mile long run. Taper to 30, 22 and 9 pre-race miles.",
   "weeks": [
     {
       "week": 1,
@@ -941,17 +941,17 @@
       "start": "2026-12-21",
       "end": "2026-12-27",
       "phase": "Build endurance",
-      "total": 34,
+      "total": 35,
       "cutback": false,
       "days": [
         {
           "date": "2026-12-21",
           "dow": 0,
           "type": "easy",
-          "miles": 4,
+          "miles": 5,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "desc": "Run 5 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
           "pace": "10:10/mi",
           "cal": {
             "allDay": true
@@ -1038,17 +1038,17 @@
       "start": "2026-12-28",
       "end": "2027-01-03",
       "phase": "Marathon preparation",
-      "total": 37,
+      "total": 39,
       "cutback": false,
       "days": [
         {
           "date": "2026-12-28",
           "dow": 0,
           "type": "easy",
-          "miles": 4,
+          "miles": 5,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "desc": "Run 5 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
           "pace": "10:10/mi",
           "cal": {
             "allDay": true
@@ -1071,10 +1071,10 @@
           "date": "2026-12-30",
           "dow": 2,
           "type": "easy",
-          "miles": 4,
+          "miles": 5,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 4 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "desc": "Run 5 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1135,17 +1135,17 @@
       "start": "2027-01-04",
       "end": "2027-01-10",
       "phase": "Marathon preparation",
-      "total": 30,
+      "total": 34,
       "cutback": true,
       "days": [
         {
           "date": "2027-01-04",
           "dow": 0,
           "type": "easy",
-          "miles": 4,
+          "miles": 5,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 4 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "desc": "Run 5 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
           "pace": "10:10/mi",
           "cal": {
             "allDay": true
@@ -1155,10 +1155,10 @@
           "date": "2027-01-05",
           "dow": 1,
           "type": "easy",
-          "miles": 5,
+          "miles": 6,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "desc": "Run 6 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1168,10 +1168,10 @@
           "date": "2027-01-06",
           "dow": 2,
           "type": "easy",
-          "miles": 3,
+          "miles": 5,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 3 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "desc": "Run 5 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1232,17 +1232,17 @@
       "start": "2027-01-11",
       "end": "2027-01-17",
       "phase": "Marathon preparation",
-      "total": 39,
+      "total": 45,
       "cutback": false,
       "days": [
         {
           "date": "2027-01-11",
           "dow": 0,
           "type": "easy",
-          "miles": 5,
+          "miles": 6,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 5 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "desc": "Run 6 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
           "pace": "10:10/mi",
           "cal": {
             "allDay": true
@@ -1252,10 +1252,10 @@
           "date": "2027-01-12",
           "dow": 1,
           "type": "easy",
-          "miles": 6,
+          "miles": 8,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 6 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "desc": "Run 8 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground at 7:15/mi with 75 seconds of jogging at 10:10/mi between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1265,10 +1265,10 @@
           "date": "2027-01-13",
           "dow": 2,
           "type": "easy",
-          "miles": 5,
+          "miles": 7,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "desc": "Run 7 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1278,10 +1278,10 @@
           "date": "2027-01-14",
           "dow": 3,
           "type": "easy",
-          "miles": 6,
+          "miles": 7,
           "title": "Easy run before Saturday",
           "paceKey": "easy",
-          "desc": "Run 6 miles at 9:45/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
+          "desc": "Run 7 miles at 9:45/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1330,17 +1330,17 @@
       "start": "2027-01-18",
       "end": "2027-01-24",
       "phase": "Marathon preparation",
-      "total": 42,
+      "total": 50,
       "cutback": false,
       "days": [
         {
           "date": "2027-01-18",
           "dow": 0,
           "type": "easy",
-          "miles": 5,
+          "miles": 7,
           "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "Run 5 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
+          "desc": "Run 7 miles at 10:10/mi. Use a flat route and start at 10:10/mi for the first mile. Keep it at RPE 2 out of 10.",
           "pace": "10:10/mi",
           "cal": {
             "allDay": true
@@ -1350,10 +1350,10 @@
           "date": "2027-01-19",
           "dow": 1,
           "type": "easy",
-          "miles": 7,
+          "miles": 9,
           "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "Run 7 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences.",
+          "desc": "Run 9 miles at 9:45/mi. Start the first mile at 10:10/mi, then settle into a pace where you can speak in full sentences.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1363,10 +1363,10 @@
           "date": "2027-01-20",
           "dow": 2,
           "type": "easy",
-          "miles": 5,
+          "miles": 8,
           "title": "Easy mileage",
           "paceKey": "easy",
-          "desc": "Run 5 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "desc": "Run 8 miles at 9:45/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1376,10 +1376,10 @@
           "date": "2027-01-21",
           "dow": 3,
           "type": "easy",
-          "miles": 6,
+          "miles": 7,
           "title": "Easy run before Saturday",
           "paceKey": "easy",
-          "desc": "Run 6 miles at 9:45/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
+          "desc": "Run 7 miles at 9:45/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
           "pace": "9:45/mi",
           "cal": {
             "allDay": true
@@ -1717,7 +1717,7 @@
     "A": "Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
     "B": "Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week."
   },
-  "progressionRule": "Advance only after recovering normally from your recent mileage and long run. Repeat or reduce the last well-tolerated week after several missed runs or persistent fatigue. Keep Friday and Sunday as rest days except on race day. Keep Saturday long runs and one structured quality session per week. Keep January 14 easy before the January 16 race rehearsal. Cap long runs at three hours and begin the taper January 25 even if the peak is shortened.",
+  "progressionRule": "Advance only after recovering normally from your recent mileage and long run. Repeat or reduce the last well-tolerated week after several missed runs or persistent fatigue. Keep Friday and Sunday as rest days except on race day. Keep Saturday long runs and one structured quality session per week. Keep January 14 easy before the January 16 race rehearsal. Cap long runs at three hours and begin the taper January 25 even if the peak is shortened. Attempt the 50-mile peak only after completing the 45-mile build week and recovering normally from the 17-mile rehearsal. Otherwise repeat or shorten the last well-tolerated week before tapering.",
   "sources": [
     "https://www.halhigdon.com/training-programs/marathon-training/novice-1-marathon/",
     "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
@@ -1725,7 +1725,7 @@
     "https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels",
     "https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon/"
   ],
-  "version": "stephen-330-exact-paces-2026-11-19",
+  "version": "stephen-330-exact-paces-50mi-2026-11-19",
   "qualityRule": "Warm-ups, recovery jogs and cool-downs are included in the stated mileage. Do the faster blocks when easy effort and recovery have been normal. If not, run easy at the same or shorter distance.",
   "longRunProgression": {
     "readyStepMiles": 2,
@@ -1745,7 +1745,7 @@
     {
       "date": "2027-01-17",
       "title": "3:30 readiness review",
-      "review": "Review your consistency, January 16 rehearsal and fueling. Keep 3:30 as your A goal if 8:04/mi felt controlled late in the long run and you recovered normally."
+      "review": "Review your consistency, January 16 rehearsal and fueling. Keep 3:30 as your A goal if 8:04/mi felt controlled late in the long run and you recovered normally. Advance to 50 miles only if you completed the 45-mile week and your easy effort and recovery are back to normal."
     }
   ],
   "racePreparation": {
