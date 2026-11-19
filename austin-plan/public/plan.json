@@ -3,32 +3,32 @@
   "race": {
     "name": "Austin Marathon",
     "date": "2027-02-14",
-    "goal": "3:40:00"
+    "goal": "3:30:00"
   },
   "paces": {
-    "Recovery": "Very relaxed, RPE 1–2/10; slower than easy when needed",
-    "Easy": "Conversational effort, RPE 2–3/10; do not force a fixed pace",
-    "Long run": "Mostly conversational, RPE 3/10; stop at 3 hours",
-    "Marathon": "8:23/mi target; early practice 8:23–8:35/mi only while controlled",
-    "Threshold": "Controlled comfortably hard, RPE 6–7/10; current fitness sets pace",
-    "Interval": "Relaxed short pickups and strides; no all-out sprinting"
+    "Recovery": "9:40–10:45/mi",
+    "Easy": "9:15–10:15/mi",
+    "Long run": "9:25–10:20/mi",
+    "Marathon": "8:01/mi race target. Follow the specific pace range in each workout as the blocks progress.",
+    "Threshold": "Use the prescribed work-block pace and keep the effort controlled.",
+    "Interval": "Relaxed 15-second strides near 7:00–7:30/mi on flat ground, with full easy jog recoveries."
   },
   "paceRanges": {
     "recovery": [
-      570,
-      720
-    ],
-    "easy": [
-      570,
+      580,
       645
     ],
+    "easy": [
+      555,
+      615
+    ],
     "long": [
-      570,
-      660
+      565,
+      620
     ],
     "mp": [
-      503,
-      515
+      481,
+      488
     ]
   },
   "phases": [
@@ -46,7 +46,7 @@
         2,
         6
       ],
-      "blurb": "Earn consistent running first; short controlled goal-pace blocks begin November 5."
+      "blurb": "Reestablish consistent mileage after the makeup long run."
     },
     {
       "name": "Build endurance",
@@ -54,7 +54,7 @@
         7,
         10
       ],
-      "blurb": "Five running days when earned, weekly quality, and progressively longer goal-pace blocks."
+      "blurb": "Build toward five run days per week with controlled marathon-pace progression."
     },
     {
       "name": "Marathon preparation",
@@ -62,7 +62,7 @@
         11,
         14
       ],
-      "blurb": "Marathon-specific workouts, a fueling rehearsal, and a conditional 40-mile peak."
+      "blurb": "Practice race fueling and pacing, progressing to a conditional 42-mile peak."
     },
     {
       "name": "Taper",
@@ -70,10 +70,10 @@
         15,
         17
       ],
-      "blurb": "Reduce running and lifting fatigue before race day."
+      "blurb": "Three weeks of reduced mileage with brief marathon-pace practice and fresher legs for race day."
     }
   ],
-  "status": "Requested higher-volume plan: conditional 50-mile week January 11 and 52-mile week January 18, with 20- and 22-mile Saturday ceilings. Lead-in weeks are 40, 44 and a 36-mile cutback. Added volume is easy weekday running. This exceeds what the recent shared history currently supports; reassess against completed training before attempting the peak. Friday/Sunday rest and the three-week taper remain.",
+  "status": "3:30 Austin Marathon goal on February 14, 2027. Peak at up to 42 miles and a 19-mile long run if the buildup is consistent. Taper to 30, 22 and 9 pre-race miles.",
   "weeks": [
     {
       "week": 1,
@@ -520,10 +520,10 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
@@ -533,8 +533,8 @@
           "miles": 10,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "Run 10 miles at conversational effort if Thursday felt normal and your legs feel recovered. Cap the run at 8 miles if your legs still feel heavy. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 10 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Cap it at 8 miles if your legs still feel heavy from the makeup half marathon. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -544,13 +544,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -559,18 +557,18 @@
       "start": "2026-11-23",
       "end": "2026-11-29",
       "phase": "Build consistency",
-      "total": 32,
+      "total": 25,
       "cutback": false,
       "days": [
         {
           "date": "2026-11-23",
           "dow": 0,
           "type": "easy",
-          "miles": 5,
-          "title": "Monday easy recovery run",
+          "miles": 4,
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -579,11 +577,11 @@
           "date": "2026-11-24",
           "dow": 1,
           "type": "easy",
-          "miles": 6,
-          "title": "Easy + relaxed strides + Strength A",
+          "miles": 5,
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 × 15 seconds of relaxed, quick running near the end, with 60–90 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -591,12 +589,12 @@
         {
           "date": "2026-11-25",
           "dow": 2,
-          "type": "easy",
-          "miles": 3,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Midweek recovery",
+          "paceKey": null,
+          "desc": "Run 0 miles. Optional 20–25 minute easy walk or spin at RPE 1–2 out of 10. Finish with 5 minutes of comfortable ankle and hip mobility.",
+          "pace": "Rest",
           "cal": null
         },
         {
@@ -604,10 +602,10 @@
           "dow": 3,
           "type": "quality",
           "miles": 5,
-          "title": "Goal-pace consolidation — 2 × 8 minutes",
+          "title": "2 × 1 mile at controlled steady pace",
           "paceKey": "mp",
-          "desc": "5 miles total: 1.5 miles easy, then 2 × 8 minutes at 8:23–8:35/mi with 3 minutes easy jogging between. Finish easy to 5 miles. This repeats the previous dose while the fifth run is introduced; do not add faster repetitions. Goal pace must feel controlled, roughly RPE 5–6/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Work blocks: 8:23–8:35/mi; other running easy",
+          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 × 1 mile at 8:20–8:30/mi. Jog 0.5 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Find a flat route and keep both reps even. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:20–8:30/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -617,21 +615,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2026-11-28",
           "dow": 5,
           "type": "long",
-          "miles": 13,
+          "miles": 11,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "13 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 11 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Start with 2 miles around 10:10/mi. Choose a route with easy access to water. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -641,13 +639,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -656,18 +652,18 @@
       "start": "2026-11-30",
       "end": "2026-12-06",
       "phase": "Build endurance",
-      "total": 34,
+      "total": 29,
       "cutback": false,
       "days": [
         {
           "date": "2026-11-30",
           "dow": 0,
           "type": "easy",
-          "miles": 5,
-          "title": "Monday easy recovery run",
+          "miles": 4,
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -676,11 +672,11 @@
           "date": "2026-12-01",
           "dow": 1,
           "type": "easy",
-          "miles": 6,
-          "title": "Easy + relaxed strides + Strength A",
+          "miles": 5,
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 × 15 seconds of relaxed, quick running near the end, with 60–90 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -689,22 +685,24 @@
           "date": "2026-12-02",
           "dow": 2,
           "type": "easy",
-          "miles": 4,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": null
+          "miles": 3,
+          "title": "Easy mileage",
+          "paceKey": "easy",
+          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:15–10:15/mi",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-12-03",
           "dow": 3,
           "type": "quality",
           "miles": 5,
-          "title": "Goal-pace mile repetitions — 2 × 1 mile",
+          "title": "2 × 1 mile of marathon-pace progression",
           "paceKey": "mp",
-          "desc": "5 miles total: 1.5 miles easy, then 2 × 1 mile at 8:23–8:35/mi with 3 minutes easy jogging between. Finish easy to 5 miles. Keep the second repetition as controlled as the first. Goal pace must feel controlled, roughly RPE 5–6/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Work blocks: 8:23–8:35/mi; other running easy",
+          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 × 1 mile at 8:12–8:22/mi. Jog 0.5 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Keep your breathing controlled and finish with another rep in reserve. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:12–8:22/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -714,21 +712,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2026-12-05",
           "dow": 5,
           "type": "long",
-          "miles": 14,
+          "miles": 12,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "14 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 12 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Pick a mostly flat route and aim for even effort after the first 2 miles. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -738,13 +736,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -753,18 +749,18 @@
       "start": "2026-12-07",
       "end": "2026-12-13",
       "phase": "Build endurance",
-      "total": 36,
+      "total": 32,
       "cutback": false,
       "days": [
         {
           "date": "2026-12-07",
           "dow": 0,
           "type": "easy",
-          "miles": 5,
-          "title": "Monday easy recovery run",
+          "miles": 4,
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -774,10 +770,10 @@
           "dow": 1,
           "type": "easy",
           "miles": 5,
-          "title": "Easy + relaxed strides + Strength A",
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 × 15 seconds of relaxed, quick running near the end, with 60–90 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -786,22 +782,24 @@
           "date": "2026-12-09",
           "dow": 2,
           "type": "easy",
-          "miles": 4,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": null
+          "miles": 3,
+          "title": "Easy mileage",
+          "paceKey": "easy",
+          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:15–10:15/mi",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-12-10",
           "dow": 3,
           "type": "quality",
           "miles": 6,
-          "title": "Goal-pace progression — 3 × 1 mile",
+          "title": "3 × 1 mile of marathon-pace progression",
           "paceKey": "mp",
-          "desc": "6 miles total: 1.5 miles easy, then 3 × 1 mile at 8:23–8:35/mi with 2 minutes easy jogging between. Finish the remaining distance easy. Add the third repetition only if the previous session and subsequent recovery were good; otherwise repeat 2 × 1 mile. Goal pace must feel controlled, roughly RPE 5–6/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Work blocks: 8:23–8:35/mi; other running easy",
+          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 3 × 1 mile at 8:08–8:18/mi. Jog 0.25 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Run the first rep near the slower end and keep the third smooth. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:08–8:18/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -811,21 +809,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2026-12-12",
           "dow": 5,
           "type": "long",
-          "miles": 16,
+          "miles": 14,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "16 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 14 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Start at the slow end for 2 miles. Practice carrying the fuel you expect to use on race day. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -835,13 +833,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -850,7 +846,7 @@
       "start": "2026-12-14",
       "end": "2026-12-20",
       "phase": "Build endurance",
-      "total": 29,
+      "total": 25,
       "cutback": true,
       "days": [
         {
@@ -858,10 +854,10 @@
           "dow": 0,
           "type": "easy",
           "miles": 4,
-          "title": "Monday easy recovery run",
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -871,10 +867,10 @@
           "dow": 1,
           "type": "easy",
           "miles": 5,
-          "title": "Easy + relaxed strides + Strength A",
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 × 15 seconds of relaxed, quick running near the end, with 60–90 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -882,12 +878,12 @@
         {
           "date": "2026-12-16",
           "dow": 2,
-          "type": "easy",
-          "miles": 3,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "type": "rest",
+          "miles": 0,
+          "title": "Midweek recovery",
+          "paceKey": null,
+          "desc": "Run 0 miles. Optional 20–25 minute easy walk or spin at RPE 1–2 out of 10. Finish with 5 minutes of comfortable ankle and hip mobility.",
+          "pace": "Rest",
           "cal": null
         },
         {
@@ -895,10 +891,10 @@
           "dow": 3,
           "type": "quality",
           "miles": 5,
-          "title": "Controlled 20-minute benchmark",
-          "paceKey": "steady",
-          "desc": "5 miles total: 1.5 miles easy, 20 minutes at controlled RPE 7/10, then cool down to 5 miles. Record pace and next-day recovery. This is not an all-out time trial or a marathon-time prediction. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace. Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Benchmark portion: controlled hard RPE 7/10",
+          "title": "2 steady miles during cutback week",
+          "paceKey": "mp",
+          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 continuous miles at 8:15–8:25/mi. Cool down for 1.5 miles at 9:15–10:15/mi. Keep the effort around RPE 5 out of 10 and finish fresh. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:15–8:25/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -908,21 +904,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2026-12-19",
           "dow": 5,
           "type": "long",
-          "miles": 12,
+          "miles": 11,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "12 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 11 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Use this cutback to absorb the last three weeks. Run on flat terrain and keep the finish easy. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -932,13 +928,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -947,18 +941,18 @@
       "start": "2026-12-21",
       "end": "2026-12-27",
       "phase": "Build endurance",
-      "total": 40,
+      "total": 34,
       "cutback": false,
       "days": [
         {
           "date": "2026-12-21",
           "dow": 0,
           "type": "easy",
-          "miles": 7,
-          "title": "Monday easy recovery run",
+          "miles": 4,
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -967,11 +961,11 @@
           "date": "2026-12-22",
           "dow": 1,
           "type": "easy",
-          "miles": 7,
-          "title": "Easy + relaxed strides + Strength A",
+          "miles": 5,
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 × 15 seconds of relaxed, quick running near the end, with 60–90 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -980,22 +974,24 @@
           "date": "2026-12-23",
           "dow": 2,
           "type": "easy",
-          "miles": 5,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": null
+          "miles": 4,
+          "title": "Easy mileage",
+          "paceKey": "easy",
+          "desc": "Run 4 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:15–10:15/mi",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-12-24",
           "dow": 3,
           "type": "quality",
-          "miles": 5,
-          "title": "Three miles at goal marathon pace",
+          "miles": 6,
+          "title": "3 continuous miles near marathon pace",
           "paceKey": "mp",
-          "desc": "5 miles total: 1 mile easy, 3 miles at 8:23/mi target, 1 mile easy. Only use goal pace if earlier practice was controlled; otherwise use a steady effort. Finish with good mechanics and no straining. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace. Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Middle 3 mi: 8:23/mi target; otherwise steady effort",
+          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 3 continuous miles at 8:05–8:12/mi. Cool down for 1.5 miles at 9:15–10:15/mi. Settle in gradually and keep the last mile controlled. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:05–8:12/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1005,21 +1001,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2026-12-26",
           "dow": 5,
           "type": "long",
-          "miles": 16,
+          "miles": 15,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "16 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 15 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Use a gently rolling route. Shorten your stride uphill and let the mile splits vary. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -1029,13 +1025,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -1044,18 +1038,18 @@
       "start": "2026-12-28",
       "end": "2027-01-03",
       "phase": "Marathon preparation",
-      "total": 44,
+      "total": 37,
       "cutback": false,
       "days": [
         {
           "date": "2026-12-28",
           "dow": 0,
           "type": "easy",
-          "miles": 6,
-          "title": "Monday easy recovery run",
+          "miles": 4,
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1064,11 +1058,11 @@
           "date": "2026-12-29",
           "dow": 1,
           "type": "easy",
-          "miles": 7,
-          "title": "Easy + relaxed strides + Strength A",
+          "miles": 6,
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 × 15 seconds of relaxed, quick running near the end, with 60–90 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 6 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -1077,22 +1071,24 @@
           "date": "2026-12-30",
           "dow": 2,
           "type": "easy",
-          "miles": 7,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": null
+          "miles": 4,
+          "title": "Easy mileage",
+          "paceKey": "easy",
+          "desc": "Run 4 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:15–10:15/mi",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2026-12-31",
           "dow": 3,
-          "type": "easy",
-          "miles": 6,
-          "title": "Easy run — save the quality for Saturday",
-          "paceKey": "easy",
-          "desc": "6 miles easy. No tempo or goal-pace blocks today. Brief upper-body/core Strength B is optional; skip extra leg strength before the long-run rehearsal.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "type": "quality",
+          "miles": 7,
+          "title": "2 × 2 miles near marathon pace",
+          "paceKey": "mp",
+          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 × 2 miles at 8:01–8:08/mi. Jog 0.5 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Use a flat loop so you can compare both reps at the same effort. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:01–8:08/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1102,21 +1098,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2027-01-02",
           "dow": 5,
           "type": "long",
-          "miles": 18,
-          "title": "18-mile long run with optional goal-pace finish",
+          "miles": 16,
+          "title": "Easy long run",
           "paceKey": "long",
-          "desc": "18 miles total: first 15 miles easy, then optional final 3 miles at 8:23–8:35/mi only if the preceding training and shorter goal-pace sessions were well tolerated and you are recovered and pain-free. Otherwise run all 18 easy. No additional faster work this week; Thursday is easy. Practice familiar fueling and race kit. Stop at 3 hours even if short of the distance; do not speed up to reach the mileage.",
-          "pace": "First 15 mi easy; optional final 3 mi at 8:23–8:35",
+          "desc": "Run 16 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Wear your intended race shoes and test how your fueling feels late in the run. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -1126,13 +1122,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -1141,18 +1135,18 @@
       "start": "2027-01-04",
       "end": "2027-01-10",
       "phase": "Marathon preparation",
-      "total": 36,
+      "total": 30,
       "cutback": true,
       "days": [
         {
           "date": "2027-01-04",
           "dow": 0,
           "type": "easy",
-          "miles": 6,
-          "title": "Monday easy recovery run",
+          "miles": 4,
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1161,11 +1155,11 @@
           "date": "2027-01-05",
           "dow": 1,
           "type": "easy",
-          "miles": 6,
-          "title": "Easy + relaxed strides + Strength A",
+          "miles": 5,
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 × 15 seconds of relaxed, quick running near the end, with 60–90 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -1174,22 +1168,24 @@
           "date": "2027-01-06",
           "dow": 2,
           "type": "easy",
-          "miles": 5,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": null
+          "miles": 3,
+          "title": "Easy mileage",
+          "paceKey": "easy",
+          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:15–10:15/mi",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-01-07",
           "dow": 3,
           "type": "quality",
           "miles": 5,
-          "title": "Goal-pace maintenance — cutback week",
+          "title": "2 light marathon-pace miles",
           "paceKey": "mp",
-          "desc": "5 miles total: 1.5 miles easy, then 2 × 1 mile at 8:23/mi target with 3 minutes easy jogging between. Finish easy to 5 miles. Keep the cutback week light; omit the blocks if still tired from the January 2 long run. Goal pace must feel controlled, roughly RPE 5–6/10, with relaxed mechanics. Use this session only if recovered, pain-free and the preceding two weeks were consistent. If breathing becomes hard, form deteriorates or effort rises above controlled, slow down or finish easy; do not force 8:23. All recoveries and warm-up/cool-down miles are included in the daily total. Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week.",
-          "pace": "Work miles: 8:23/mi target; other running easy",
+          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 2 continuous miles at 8:05–8:12/mi. Cool down for 1.5 miles at 9:15–10:15/mi. Use this as a rhythm check during the cutback. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:05–8:12/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1199,21 +1195,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2027-01-09",
           "dow": 5,
           "type": "long",
-          "miles": 14,
+          "miles": 13,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "14 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 13 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Keep the whole cutback long run conversational. Review how the January 2 run and recent pace reps felt before advancing. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -1223,13 +1219,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -1238,18 +1232,18 @@
       "start": "2027-01-11",
       "end": "2027-01-17",
       "phase": "Marathon preparation",
-      "total": 50,
+      "total": 39,
       "cutback": false,
       "days": [
         {
           "date": "2027-01-11",
           "dow": 0,
           "type": "easy",
-          "miles": 8,
-          "title": "Monday easy recovery run",
+          "miles": 5,
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "8 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 5 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1258,11 +1252,11 @@
           "date": "2027-01-12",
           "dow": 1,
           "type": "easy",
-          "miles": 8,
-          "title": "Easy + relaxed strides + Strength A",
+          "miles": 6,
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "8 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. If recovered and pain-free, include 6 × 15 seconds of relaxed, quick running near the end, with 60–90 seconds walking/jogging between. Strides are smooth, not sprints, and stay inside the daily mileage. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 6 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. If recovered and pain-free, include 4 × 15 seconds on flat ground near 7:00–7:30/mi with 60–90 seconds of easy jogging between. Strides should feel smooth at about RPE 6 out of 10. Strength A is optional after the run.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -1271,22 +1265,24 @@
           "date": "2027-01-13",
           "dow": 2,
           "type": "easy",
-          "miles": 7,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": null
+          "miles": 5,
+          "title": "Easy mileage",
+          "paceKey": "easy",
+          "desc": "Run 5 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:15–10:15/mi",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-01-14",
           "dow": 3,
           "type": "easy",
-          "miles": 7,
-          "title": "Easy run — save the effort for Saturday",
+          "miles": 6,
+          "title": "Easy run before Saturday",
           "paceKey": "easy",
-          "desc": "7 miles easy at conversational effort. No goal-pace blocks, strides or hard leg lifting this week. Optional gentle upper-body and core work only if fresh. Saturday’s long run is the main training stimulus. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 6 miles at 9:15–10:15/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -1296,21 +1292,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2027-01-16",
           "dow": 5,
           "type": "long",
-          "miles": 20,
-          "title": "Conditional peak long run — up to 20 miles",
+          "miles": 17,
+          "title": "17-mile race rehearsal",
           "paceKey": "long",
-          "desc": "Up to 20 miles at easy conversational effort, only after completing the preceding long-run progression with normal recovery and no pain affecting running. This is a ceiling, not mileage owed. Stop at 3 hours 30 minutes even if short of the distance; do not speed up to finish. No goal-pace finish. Practice familiar fueling, fluids and race kit. Shorten or stop for worsening pain, altered stride or unusual fatigue. If the preceding build was missed or poorly tolerated, use the last well-tolerated long-run distance instead. Sunday is full rest.",
-          "pace": "Conversational effort · up to 20 mi or 3h30, whichever comes first",
+          "desc": "Run 7 miles at 9:25–10:20/mi, then 2 × 2 miles at 8:01–8:08/mi with 1 easy mile between. Finish with 5 miles at 9:25–10:20/mi. Use your race breakfast, shoes and fueling schedule. Run all 17 easy if goal pace feels strained or recent recovery has been poor. Stop at 3 hours.",
+          "pace": "9:25–10:20/mi easy · 8:01–8:08/mi for optional reps",
           "cal": {
             "allDay": true
           },
@@ -1321,13 +1317,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -1336,18 +1330,18 @@
       "start": "2027-01-18",
       "end": "2027-01-24",
       "phase": "Marathon preparation",
-      "total": 52,
+      "total": 42,
       "cutback": false,
       "days": [
         {
           "date": "2027-01-18",
           "dow": 0,
           "type": "easy",
-          "miles": 8,
-          "title": "Monday easy recovery run",
+          "miles": 5,
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "8 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 5 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1356,11 +1350,11 @@
           "date": "2027-01-19",
           "dow": 1,
           "type": "easy",
-          "miles": 8,
-          "title": "Easy run + Strength A",
+          "miles": 7,
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "8 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 7 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -1369,22 +1363,24 @@
           "date": "2027-01-20",
           "dow": 2,
           "type": "easy",
-          "miles": 7,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Additional distance is easy aerobic running only. This higher-volume target depends on completing the preceding build with normal recovery; reduce rather than make up miles if it is not tolerated.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": null
+          "miles": 5,
+          "title": "Easy mileage",
+          "paceKey": "easy",
+          "desc": "Run 5 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:15–10:15/mi",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-01-21",
           "dow": 3,
           "type": "easy",
-          "miles": 7,
-          "title": "Easy run — peak long-run week",
+          "miles": 6,
+          "title": "Easy run before Saturday",
           "paceKey": "easy",
-          "desc": "7 miles easy at conversational effort. No tempo or goal-pace blocks in this peak-volume week. Optional upper-body/core only; skip lower-body strength. Saturday is the main stimulus.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 6 miles at 9:15–10:15/mi. Keep the route flat and the effort low so your legs feel fresh on Saturday.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -1394,21 +1390,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2027-01-23",
           "dow": 5,
           "type": "long",
-          "miles": 22,
-          "title": "Conditional peak long run — up to 22 miles",
+          "miles": 19,
+          "title": "Peak easy long run",
           "paceKey": "long",
-          "desc": "Up to 22 miles at easy conversational effort, only after completing the preceding long-run progression with normal recovery and no pain affecting running. This is a ceiling, not mileage owed. Stop at 3 hours 30 minutes even if short of the distance; do not speed up to finish. No goal-pace finish. Practice familiar fueling, fluids and race kit. Shorten or stop for worsening pain, altered stride or unusual fatigue. If the preceding build was missed or poorly tolerated, use the last well-tolerated long-run distance instead. Sunday is full rest.",
-          "pace": "Conversational effort · up to 22 mi or 3h30, whichever comes first",
+          "desc": "Run 19 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Run up to 19 miles only if you completed the 17-mile run and recovered normally. Otherwise repeat your last well-tolerated long run. Use race shoes and fueling on a rolling route, with easy effort throughout. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           },
@@ -1419,13 +1415,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -1434,18 +1428,18 @@
       "start": "2027-01-25",
       "end": "2027-01-31",
       "phase": "Taper",
-      "total": 33,
-      "cutback": false,
+      "total": 30,
+      "cutback": true,
       "days": [
         {
           "date": "2027-01-25",
           "dow": 0,
           "type": "easy",
-          "miles": 5,
-          "title": "Monday easy recovery run",
+          "miles": 4,
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate. Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 4 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1454,11 +1448,11 @@
           "date": "2027-01-26",
           "dow": 1,
           "type": "easy",
-          "miles": 6,
-          "title": "Easy run",
+          "miles": 5,
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "6 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. One light set of familiar Strength A exercises only; no fatigue-building lifting. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 5 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. Keep the last mile easy and skip heavy lifting.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -1467,22 +1461,24 @@
           "date": "2027-01-27",
           "dow": 2,
           "type": "easy",
-          "miles": 4,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": null
+          "miles": 3,
+          "title": "Easy mileage",
+          "paceKey": "easy",
+          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:15–10:15/mi",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-01-28",
           "dow": 3,
           "type": "quality",
           "miles": 6,
-          "title": "Taper goal-pace reminder",
+          "title": "3 miles at marathon pace during taper",
           "paceKey": "mp",
-          "desc": "6 miles total: 1.5 miles easy, 3 miles at 8:23/mi target, 1.5 miles easy. Keep it comfortable and leave energy in reserve; shorten to 2 goal-pace miles if recovery is incomplete. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace.",
-          "pace": "Middle 3 mi: 8:23/mi target, controlled",
+          "desc": "Warm up for 1.5 miles at 9:15–10:15/mi. Run 3 continuous miles at 8:01–8:06/mi. Cool down for 1.5 miles at 9:15–10:15/mi. Finish with energy to spare. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1492,10 +1488,10 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
@@ -1505,8 +1501,8 @@
           "miles": 12,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "12 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 12 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Keep all 12 miles conversational. Use a familiar flat route to reduce fatigue. For runs over 75 minutes, start familiar fuel early and use the same timing throughout. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -1516,13 +1512,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -1531,18 +1525,18 @@
       "start": "2027-02-01",
       "end": "2027-02-07",
       "phase": "Taper",
-      "total": 23,
-      "cutback": false,
+      "total": 22,
+      "cutback": true,
       "days": [
         {
           "date": "2027-02-01",
           "dow": 0,
           "type": "easy",
           "miles": 3,
-          "title": "Monday easy recovery run",
+          "title": "Recovery run",
           "paceKey": "recovery",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace.  Sunday is a full rest day after Saturday’s long run. Keep Monday conversational; do not make up missed miles.",
-          "pace": "Very relaxed · RPE 1–2/10",
+          "desc": "Run 3 miles at 9:40–10:45/mi. Use a flat route and start at the slow end for the first mile. Keep it at RPE 2 out of 10.",
+          "pace": "9:40–10:45/mi",
           "cal": {
             "allDay": true
           }
@@ -1551,11 +1545,11 @@
           "date": "2027-02-02",
           "dow": 1,
           "type": "easy",
-          "miles": 5,
-          "title": "Easy run",
+          "miles": 4,
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "5 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. One light set of familiar Strength A exercises only; no fatigue-building lifting. Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 4 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. Keep the last mile easy and skip heavy lifting.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -1565,21 +1559,23 @@
           "dow": 2,
           "type": "easy",
           "miles": 3,
-          "title": "Midweek easy aerobic run",
-          "paceKey": "recovery",
-          "desc": "3 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Add this fifth run only after the preceding two weeks meet the consistency and recovery rule. Otherwise rest or walk; do not move these miles elsewhere.  Added distance stays easy; do not add faster repetitions. Shorten this run if recovery or normal running mechanics deteriorate.",
-          "pace": "Very relaxed · RPE 1–2/10",
-          "cal": null
+          "title": "Easy mileage",
+          "paceKey": "easy",
+          "desc": "Run 3 miles at 9:15–10:15/mi. Keep your cadence relaxed and let the pace drift slower uphill. Finish as easily as you started.",
+          "pace": "9:15–10:15/mi",
+          "cal": {
+            "allDay": true
+          }
         },
         {
           "date": "2027-02-04",
           "dow": 3,
           "type": "quality",
-          "miles": 5,
-          "title": "Short goal-pace repetitions",
+          "miles": 4,
+          "title": "2 × 0.75 mile at marathon pace",
           "paceKey": "mp",
-          "desc": "5 miles total: 1.5 miles easy, 2 × 1 mile at 8:23/mi with 2 minutes easy between, then easy running to 5 miles. Finish fresh; this is practice, not a fitness test. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace.",
-          "pace": "Work miles: 8:23/mi; other running easy",
+          "desc": "Warm up for 1.25 miles at 9:15–10:15/mi. Run 2 × 0.75 mile at 8:01–8:06/mi. Jog 0.25 mile at 9:40–10:45/mi between reps. Cool down for 1 miles at 9:15–10:15/mi. Keep your stride relaxed and let the recovery jog reset your breathing. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1589,21 +1585,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Rest before the long run",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Optional 15–20 minute walk at RPE 1–2 out of 10. Set out your shoes, water and familiar fuel for Saturday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2027-02-06",
           "dow": 5,
           "type": "long",
-          "miles": 7,
+          "miles": 8,
           "title": "Easy long run",
           "paceKey": "long",
-          "desc": "7 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. Stop at 3 hours even if short of the distance; do not speed up to meet the mileage. For runs over 75–90 minutes, rehearse familiar carbohydrate intake, fluids and race kit. Build fueling gradually from what you already tolerate. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 8 miles at 9:25–10:20/mi on flat ground, with hills paced by conversational effort. Run 8 easy miles on a familiar route. Finish feeling like you could comfortably keep going. Stop at 3 hours even if you have mileage left.",
+          "pace": "9:25–10:20/mi",
           "cal": {
             "allDay": true
           }
@@ -1613,13 +1609,11 @@
           "dow": 6,
           "type": "rest",
           "miles": 0,
-          "title": "Sunday rest",
+          "title": "Rest after the long run",
           "paceKey": null,
-          "desc": "Rest after Saturday’s long run. No scheduled running or strength. Optional gentle mobility if comfortable.",
+          "desc": "Run 0 miles. Optional 15–25 minute relaxed walk. Check how your legs feel on stairs and use Monday as rest if walking still feels unusually hard.",
           "pace": "Rest",
-          "cal": {
-            "allDay": true
-          }
+          "cal": null
         }
       ]
     },
@@ -1629,17 +1623,17 @@
       "end": "2027-02-14",
       "phase": "Taper",
       "total": 35.2,
-      "cutback": false,
+      "cutback": true,
       "days": [
         {
           "date": "2027-02-08",
           "dow": 0,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Race-week rest",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Take normal walks and 5 minutes of gentle mobility if it helps you feel loose. Skip hard strength and save your legs for Sunday.",
+          "pace": "Rest",
           "cal": null
         },
         {
@@ -1647,10 +1641,10 @@
           "dow": 1,
           "type": "easy",
           "miles": 4,
-          "title": "Easy run",
+          "title": "Easy aerobic run",
           "paceKey": "easy",
-          "desc": "4 miles total at conversational effort. Let pace follow recovery and conditions; do not force a fixed 9:30 pace. ",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "desc": "Run 4 miles at 9:15–10:15/mi. Ease into the first mile, then settle into a pace where you can speak in full sentences. Keep the last mile easy and skip heavy lifting.",
+          "pace": "9:15–10:15/mi",
           "cal": {
             "allDay": true
           }
@@ -1660,10 +1654,10 @@
           "dow": 2,
           "type": "rest",
           "miles": 0,
-          "title": "Rest + gentle mobility",
+          "title": "Race-week rest",
           "paceKey": null,
-          "desc": "Rest. No strength training or cross-training workout.",
-          "pace": null,
+          "desc": "Run 0 miles. Take normal walks and 5 minutes of gentle mobility if it helps you feel loose. Skip hard strength and save your legs for Sunday.",
+          "pace": "Rest",
           "cal": null
         },
         {
@@ -1671,10 +1665,10 @@
           "dow": 3,
           "type": "quality",
           "miles": 3,
-          "title": "Race-week pace reminder",
+          "title": "2 × 0.5 mile at marathon pace",
           "paceKey": "mp",
-          "desc": "3 miles total, including 3 × 3 minutes at 8:23/mi with 2 minutes easy between. Begin and finish very easy. Omit the repetitions if you are tired; no new fitness is built this week. Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace.",
-          "pace": "Short work blocks: 8:23/mi; otherwise very easy",
+          "desc": "Warm up for 1 miles at 9:15–10:15/mi. Run 2 × 0.5 mile at 8:01–8:06/mi. Jog 0.25 mile at 9:40–10:45/mi between reps. Cool down for 0.75 miles at 9:15–10:15/mi. Finish fresh and keep the rest of the day easy. If still fatigued or the pace feels hard early, finish the remaining mileage at easy effort.",
+          "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy",
           "cal": {
             "allDay": true
           }
@@ -1684,21 +1678,21 @@
           "dow": 4,
           "type": "rest",
           "miles": 0,
-          "title": "Rest",
+          "title": "Race-week rest",
           "paceKey": null,
-          "desc": "Rest. Optional gentle walk if you feel better afterward.",
-          "pace": null,
+          "desc": "Run 0 miles. Take normal walks and 5 minutes of gentle mobility if it helps you feel loose. Skip hard strength and save your legs for Sunday.",
+          "pace": "Rest",
           "cal": null
         },
         {
           "date": "2027-02-13",
           "dow": 5,
-          "type": "long",
+          "type": "easy",
           "miles": 2,
-          "title": "Short shakeout or rest",
-          "paceKey": "long",
-          "desc": "2 miles very easy, or rest if you recover better that way. No strength or extra mileage. Prepare familiar shoes, race kit and fueling.",
-          "pace": "Conversational effort · RPE 2–3/10",
+          "title": "Optional race shakeout",
+          "paceKey": "easy",
+          "desc": "Run 2 flat miles at 9:30–10:30/mi. Keep the first mile at the slow end and finish relaxed. Take full rest instead if you feel more comfortable resting before a race.",
+          "pace": "9:30–10:30/mi",
           "cal": {
             "allDay": true
           }
@@ -1710,8 +1704,8 @@
           "miles": 26.2,
           "title": "Austin Marathon",
           "paceKey": "mp",
-          "desc": "Goal is 3:40 only if later training supports it. Choose race pace from your January fitness review. Start conservatively, use practiced fueling, and adjust for conditions. No new shoes, supplements or fueling on race day.",
-          "pace": "Goal 8:23/mi, conditional on fitness review",
+          "desc": "Run 26.2 miles. Open miles 1–3 around 8:05–8:10/mi on flat ground and keep climbs controlled. Settle near 8:00/mi on flatter miles through mile 20, using even effort on climbs and descents. Aim to pass halfway near 1:45. After mile 20, hold your rhythm if you can still run smoothly. Use official mile markers and elapsed time to check pacing. Start your practiced fueling early and follow the same schedule you rehearsed.",
+          "pace": "8:01/mi average · 3:30 finish",
           "cal": {
             "allDay": true
           }
@@ -1723,7 +1717,7 @@
     "A": "Strength A after Tuesday: split squat 6–8/side, push-up 6–12, single-leg glute bridge 8–12/side, straight-knee calf raise 10–15/side, side plank 20–30 sec/side. One set for the first two full weeks, then two sets; finish each with 2–3 good reps left. Add backpack/dumbbell load when the top of the range is smooth. Do not lift to failure or chase soreness.",
     "B": "Strength B after Thursday: row or assisted pull-up 6–12, dead bug 6–8/side, side plank 20–30 sec/side. Two controlled sets. On easy Thursdays only, add one or two sets of step-up 6–8/side, hamstring bridge walkout 4–6, and bent-knee calf raise 10–15/side. On quality Thursdays skip the extra lower-body work. In taper, reduce to one light set; no hard leg lifting in race week."
   },
-  "progressionRule": "Treat this as a conditional plan, not mileage owed. The initial 31-mile week and 12-mile run are aggressive compared with the recent shared history. Advance only when completed training, normal easy effort and recovery support the next step; repeat or reduce the last tolerated load if training is missed or recovery deteriorates. Never make up missed miles or override recovery reductions to hit a target. Keep Friday and Sunday as rest days, Saturday long runs, and at most one structured quality workout per week. No faster work or hard strength October 26 week. January 2 optional goal-pace finish replaces Thursday quality. January 14 and 21 are easy-only before the longest runs. January 16 and 23 are conditional 20- and 22-mile ceilings, capped at 3h30; all other long runs retain a three-hour cap. Keep the three-week taper. Race is Sunday February 14. Requested 50- and 52-mile peak weeks are conditional upper targets, not mandatory totals or established capacity. Lead-in is 40, 44, then 36 miles. Do not jump to either peak after missed training, persistent fatigue, worsening pain or altered running mechanics. Added volume is easy; do not add speed or extend long runs beyond their existing ceilings. Keep the taper even if peak targets are missed.",
+  "progressionRule": "Advance only after recovering normally from your recent mileage and long run. Repeat or reduce the last well-tolerated week after several missed runs or persistent fatigue. Keep Friday and Sunday as rest days except on race day. Keep Saturday long runs and one structured quality session per week. Keep January 14 easy before the January 16 race rehearsal. Cap long runs at three hours and begin the taper January 25 even if the peak is shortened.",
   "sources": [
     "https://www.halhigdon.com/training-programs/marathon-training/novice-1-marathon/",
     "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
@@ -1731,8 +1725,8 @@
     "https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels",
     "https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon/"
   ],
-  "version": "stephen-340-conditional-50-52-2026-10-23",
-  "qualityRule": "Every faster workout includes easy warm-up and cool-down inside the stated daily distance. Use the planned workout only with no pain, normal easy-running effort and recovery, and two consistent preceding weeks. Otherwise complete the day easy or follow a recovery reduction. Goal-pace blocks are controlled practice, never a requirement to hold an unsustainable pace.",
+  "version": "stephen-330-2026-11-19",
+  "qualityRule": "Warm-ups, recovery jogs and cool-downs are included in the stated mileage. Do the faster blocks when easy effort and recovery have been normal. If not, run easy at the same or shorter distance.",
   "longRunProgression": {
     "readyStepMiles": 2,
     "defaultStepMiles": 1,
@@ -1740,29 +1734,18 @@
     "requiredRunDays": 4,
     "checkinMaxAgeDays": 2,
     "timeCapMinutes": 180,
-    "durationExceptions": [
-      {
-        "date": "2027-01-16",
-        "maxMiles": 20,
-        "maxDurationMinutes": 210
-      },
-      {
-        "date": "2027-01-23",
-        "maxMiles": 22,
-        "maxDurationMinutes": 210
-      }
-    ]
+    "durationExceptions": []
   },
   "checkpoints": [
     {
       "date": "2026-12-17",
-      "title": "Controlled 20-minute benchmark",
-      "review": "Run the scheduled 20 minutes at a controlled hard effort, not an all-out time trial. Record average pace, effort, and next-day recovery. Use this to set current tempo effort; do not infer a marathon prediction from it."
+      "title": "Cutback pace check",
+      "review": "Record the effort and next-day recovery from the steady miles. Keep the next set of reps controlled."
     },
     {
-      "date": "2027-01-10",
-      "title": "3:40 readiness review",
-      "review": "Review consistency, recovery, the January 2 long run, and how 8:23–8:35 blocks felt. Keep 3:40 as the A goal only if the pace is controlled and endurance is progressing. Difficulty at goal pace is a reason to adjust the race target, not force faster easy runs."
+      "date": "2027-01-17",
+      "title": "3:30 readiness review",
+      "review": "Review your consistency, January 16 rehearsal and fueling. Keep 3:30 as your A goal if 8:01–8:08/mi felt controlled late in the long run and you recovered normally."
     }
   ],
   "racePreparation": {
@@ -1783,48 +1766,58 @@
     },
     {
       "date": "2026-11-26",
-      "workout": "Goal-pace consolidation — 2 × 8 minutes",
-      "pace": "Work blocks: 8:23–8:35/mi; other running easy"
+      "workout": "2 × 1 mile at controlled steady pace",
+      "pace": "8:20–8:30/mi work blocks · 9:15–10:15/mi easy"
     },
     {
       "date": "2026-12-03",
-      "workout": "Goal-pace mile repetitions — 2 × 1 mile",
-      "pace": "Work blocks: 8:23–8:35/mi; other running easy"
+      "workout": "2 × 1 mile of marathon-pace progression",
+      "pace": "8:12–8:22/mi work blocks · 9:15–10:15/mi easy"
     },
     {
       "date": "2026-12-10",
-      "workout": "Goal-pace progression — 3 × 1 mile",
-      "pace": "Work blocks: 8:23–8:35/mi; other running easy"
+      "workout": "3 × 1 mile of marathon-pace progression",
+      "pace": "8:08–8:18/mi work blocks · 9:15–10:15/mi easy"
+    },
+    {
+      "date": "2026-12-17",
+      "workout": "2 steady miles during cutback week",
+      "pace": "8:15–8:25/mi work blocks · 9:15–10:15/mi easy"
     },
     {
       "date": "2026-12-24",
-      "workout": "Three miles at goal marathon pace",
-      "pace": "Middle 3 mi: 8:23/mi target; otherwise steady effort"
+      "workout": "3 continuous miles near marathon pace",
+      "pace": "8:05–8:12/mi work blocks · 9:15–10:15/mi easy"
     },
     {
-      "date": "2027-01-02",
-      "workout": "18-mile long run with optional goal-pace finish",
-      "pace": "First 15 mi easy; optional final 3 mi at 8:23–8:35"
+      "date": "2026-12-31",
+      "workout": "2 × 2 miles near marathon pace",
+      "pace": "8:01–8:08/mi work blocks · 9:15–10:15/mi easy"
     },
     {
       "date": "2027-01-07",
-      "workout": "Goal-pace maintenance — cutback week",
-      "pace": "Work miles: 8:23/mi target; other running easy"
+      "workout": "2 light marathon-pace miles",
+      "pace": "8:05–8:12/mi work blocks · 9:15–10:15/mi easy"
+    },
+    {
+      "date": "2027-01-16",
+      "workout": "17-mile race rehearsal",
+      "pace": "9:25–10:20/mi easy · 8:01–8:08/mi for optional reps"
     },
     {
       "date": "2027-01-28",
-      "workout": "Taper goal-pace reminder",
-      "pace": "Middle 3 mi: 8:23/mi target, controlled"
+      "workout": "3 miles at marathon pace during taper",
+      "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy"
     },
     {
       "date": "2027-02-04",
-      "workout": "Short goal-pace repetitions",
-      "pace": "Work miles: 8:23/mi; other running easy"
+      "workout": "2 × 0.75 mile at marathon pace",
+      "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy"
     },
     {
       "date": "2027-02-11",
-      "workout": "Race-week pace reminder",
-      "pace": "Short work blocks: 8:23/mi; otherwise very easy"
+      "workout": "2 × 0.5 mile at marathon pace",
+      "pace": "8:01–8:06/mi work blocks · 9:15–10:15/mi easy"
     }
   ]
 }
