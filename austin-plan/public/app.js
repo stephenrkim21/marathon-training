@@ -154,7 +154,17 @@ async function load(){
   workoutsByDate.get(workout.date).push(workout);
  }
  renderTrainingOverview(plan,runs,workoutsByDate);
- const current=plan.weeks.find(w=>w.start<=today()&&today()<=w.end);
+ const localDate=today();
+ const current=plan.weeks.find(w=>w.start<=localDate&&localDate<=w.end);
+ const scheduledToday=current?.days.find(day=>day.date===localDate);
+ const completedToday=runs.filter(run=>run.date===localDate);
+ $('todayWorkout').innerHTML=scheduledToday
+  ?renderWorkouts(scheduledToday,scheduledToday.trainingWeek,plan.strength)
+  :'<p>No workout is scheduled for today.</p>';
+ if(completedToday.length){
+  const completedMiles=miles(totals(completedToday).distance).toFixed(2);
+  $('todayWorkout').insertAdjacentHTML('beforeend',`<p class="today-result">${completedMiles} mi logged today in Garmin</p>`);
+ }
  currentWeekNumber=current?.week??null;
  const weekRuns=current?runs.filter(r=>r.date>=current.start&&r.date<=current.end):[];
  const sum=totals(weekRuns);
@@ -176,7 +186,12 @@ async function load(){
  return `<div class="day ${d.date===today()?'today':''}" id="day-${d.date}"><div class="date">${new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'short'})}<strong>${d.date.slice(8)}</strong></div><div class="workout"><h4>Scheduled workouts</h4>${renderWorkouts(d,d.trainingWeek,plan.strength)}</div><div class="planned">${d.miles?d.miles+' mi':'Rest'}<small>${d.miles?esc(d.pace):'Recovery matters'}</small></div>${completed.length?completed.join(''):`<div class="no-run">${d.date<today()&&d.miles?'No completed run recorded':d.miles?'Planned workout':'Rest day'} </div>`}</div>`}).join('')}</details>`;
  }).join('');
  $('current').onclick=()=>{setTrainingView('weeks');if(current){const el=$(`week-${current.week}`);el.open=true;el.scrollIntoView({behavior:'smooth',block:'start'})}};
- }catch(e){$('syncState').textContent=e.message;}finally{$('refresh').disabled=false;}
+ }catch(e){
+  $('syncState').textContent=e.message;
+  if(!$('todayWorkout').querySelector('.session-list')){
+   $('todayWorkout').textContent='Could not load today’s schedule. Try refreshing.';
+  }
+ }finally{$('refresh').disabled=false;}
 }
 $('refresh').onclick=load;
 load();setInterval(()=>{if(!document.hidden)load()},300000);

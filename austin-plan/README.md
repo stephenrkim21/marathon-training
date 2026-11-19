@@ -2,7 +2,7 @@
 
 # Stephen — live marathon journal
 
-Private running journal for Austin Marathon, February 14, 2027, goal 3:40.
+Private running journal for Austin Marathon, February 14, 2027, goal 3:30.
 The goal remains a stretch target; the program does not infer race readiness from a few easy runs.
 
 ## Install the update on your Mac

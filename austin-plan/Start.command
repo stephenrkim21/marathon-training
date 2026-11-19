@@ -10,7 +10,7 @@ finish_error() {
 }
 trap 'finish_error "$LINENO"' ERR
 
-printf '\nSTEPHEN — ROAD TO 3:40\nLaunch your private training app\n\n'
+printf '\nSTEPHEN — ROAD TO 3:30\nLaunch your private training app\n\n'
 
 PROJECT=''
 SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"

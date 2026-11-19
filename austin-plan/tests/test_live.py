@@ -127,7 +127,7 @@ class Tests(unittest.TestCase):
  def test_authenticated_checkin_and_dashboard(self):
   token=self.store.session();r=self.request('/api/checkin','POST',dict(soreness=2,fatigue=2,effort=3,pain=False),token)
   self.assertEqual(r['status'],'200 OK')
-  body=json.loads(self.request('/api/dashboard',token=token)['body']);self.assertIn('coach',body);self.assertEqual(body['plan']['race']['goal'],'3:40:00')
+  body=json.loads(self.request('/api/dashboard',token=token)['body']);self.assertIn('coach',body);self.assertEqual(body['plan']['race']['goal'],'3:30:00')
  def test_private_source_not_served(self):self.assertEqual(self.request('/../server/core.py',token=self.store.session())['status'],'404 Not Found')
  def test_sync_deduplicates_and_preserves_original_fields(self):
   raw={'activityId':1,'startTimeLocal':'2026-10-20 10:00:00','activityType':{'typeKey':'running'},'distance':5000,'duration':1800,'averageHR':140}
